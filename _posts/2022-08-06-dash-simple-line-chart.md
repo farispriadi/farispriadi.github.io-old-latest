@@ -29,7 +29,7 @@ Selanjutnya kita akan membuat layout atau tata letak.
 import dash
 ...
 
-app = dash.Dash(\_\_name\_\_)
+app = dash.Dash(__name__)
 
 app.layout = html.Div([
 				# Div utama
@@ -43,7 +43,7 @@ app.layout = html.Div([
 
 ```
 
-*app = dash.Dash(__name__)* kode ini adalah langkah awal kita untuk membuat objek dash yang disimpan dalam variable *app*. Selanjutnya *app.layout*, kita akan meng-assign atau memasukkan layout kita ke dalam atribut layout yang berada di dalam *app*. Layout tersebut akan kita buat dengan satu *Div* utama dan di dalamnya terdapat dua *Div* anakan. Dimana *Div* pertama untuk meletakkan judul dan *Div* kedua untuk meletakkan grafik. Tanda *#* merupakan *comment* yang digunakan sebagai keterangan saja.
+*app = dash.Dash(\_\_name\_\_)* kode ini adalah langkah awal kita untuk membuat objek dash yang disimpan dalam variable *app*. Selanjutnya *app.layout*, kita akan meng-assign atau memasukkan layout kita ke dalam atribut layout yang berada di dalam *app*. Layout tersebut akan kita buat dengan satu *Div* utama dan di dalamnya terdapat dua *Div* anakan. Dimana *Div* pertama untuk meletakkan judul dan *Div* kedua untuk meletakkan grafik. Tanda *#* merupakan *comment* yang digunakan sebagai keterangan saja.
 
 ## Menuliskan konten
 

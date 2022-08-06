@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Arus Teknologi Informasi di Desa"
-author: sal
-categories: [ Jekyll, tutorial ]
+author: faris
+categories: [ opini, tutorial ]
 image: assets/images/3.jpg
 tags: [featured]
 ---

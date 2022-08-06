@@ -2,7 +2,7 @@
 layout: post
 title:  "Inovasi Desa"
 author: faris
-categories: [ cerita, desa ]
+categories: [ opini, desa ]
 image: assets/images/home.jpg
 tags: [sticky]
 ---

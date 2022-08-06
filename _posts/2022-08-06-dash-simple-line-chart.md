@@ -3,47 +3,137 @@ layout: post
 title:  "Membuat Line Chart dengan Dash Plotly."
 author: faris
 categories: [ dash, plotly, line chart, tutorial ]
-image: assets/images/3.jpg
+image: https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg
 ---
-There are lots of powerful things you can do with the Markdown editor
 
-If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
-
-As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using.
+Line chart atau diagram digunakan untuk menampilkan tren data yang kontinyu, misalkan time series data. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Line Chart.
 
 
-## Special formatting
+## Import modul yang diperlukan
 
-As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:
-
-+ ~~strike through~~
-+ ==highlight==
-+ \*escaped characters\*
-
-
-## Writing code blocks
-
-There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, `like this`. Larger snippets of code can be displayed across multiple lines using triple back ticks:
+Untuk membuat line chart sederhana, kita memerlukan beberapa modul dalam dash plotly.
 
 ```
-.my-link {
-    text-decoration: underline;
-}
+import dash
+from dash import html
+from dash import dcc
 ```
 
-If you want to get really fancy, you can even add syntax highlighting using Rouge.
+*import dash* digunakan untuk menimpor fungsionalitas pada modul dash. *from dash import html* digunakan untuk mengimpor html dash atau *dash html components*, komponen ini memungkinkan kita memasukkan komponen HTML dengan menggunakan sintaks python. *from dash import dcc* digunakan untuk mengimpor komponen core dari dash atau *dash core components* yang digunakan untuk memasukkan komponen interaktif termasuk membuat grafik.
+
+## Membuat Layout
+
+Selanjutnya kita akan membuat layout atau tata letak.
+
+```
+import dash
+...
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+				]),
+				html.Div([
+					# Div untuk Line Chart
+				]),
+			])
+
+```
+
+*app = dash.Dash(__name__)* kode ini adalah langkah awal kita untuk membuat objek dash yang disimpan dalam variable *app*. Selanjutnya *app.layout*, kita akan meng-assign atau memasukkan layout kita ke dalam atribut layout yang berada di dalam *app*. Layout tersebut akan kita buat dengan satu *Div* utama dan di dalamnya terdapat dua *Div* anakan. Dimana *Div* pertama untuk meletakkan judul dan *Div* kedua untuk meletakkan grafik. Tanda *#* merupakan *comment* yang digunakan sebagai keterangan saja.
+
+## Menuliskan konten
+
+Selanjutnya kita akan menambahkan judul dan grafiknya
+
+```
+import dash
+...
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph( figure =
+						{
+							'data' : [{
+								'x' : [1,2,3,4,5,6,7,8,9],
+								'y' : [1,4,9,16,25,36,49,64,81],
+								'mode': 'lines',
+
+							}],
+							'layout' : {
+								'title' : 'Pangkat Kuadrat',
+							}
+						}
 
 
-![walking]({{ site.baseurl }}/assets/images/8.jpg)
+					)
+				]),
+			])
+```
 
-## Reference lists
+*html.H2* kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek *Graph* yang berada pada modul *dcc*. Pada kode di atas kita akan membuat line chart sederhana . *figure* pada kelas Graph  mempunyai nilai berupa *dict*, dimana dictionary tersebut berisi *key* data  untuk mengisi data set dan *key* layout untuk mengkonfigurasi tata letak grafik. Untuk membuat line chart pada *key* mode diisi dengan nilai *'lines'*.
 
-The quick brown jumped over the lazy.
 
-Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.
 
-## Full HTML
+## Menjalankan Kode
 
-Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:
+Dengan demikian kode secara keseluruhan adalah sebagai berikut:
 
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+```
+import dash
+from dash import html
+from dash import dcc
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph( figure =
+						{
+							'data' : [{
+								'x' : [1,2,3,4,5,6,7,8,9],
+								'y' : [1,4,9,16,25,36,49,64,81],
+								'mode': 'lines',
+
+							}],
+							'layout' : {
+								'title' : 'Pangkat Kuadrat',
+							}
+						}
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+```
+
+*app.run_server()* kode ini ditambahkan ke dalam main agar server Dash dapat berjalan. File ini akan disimpan dengan nama *simple_line_chart.py*, Anda dapat mengganti nama sesuai dengan yang diinginkan.
+
+Seperti kode python lainnya, untuk menjalankannya kode ini, bisa menggunakan IDE seperti PyCharm atau run di CMD  jika di windows atau Terminal jika di distibusi Linux Ubuntu. Jika menggunakan terminal maka cara menjalankan kode dari Linux Ubuntu.
+
+```
+$ python simple_line_chart.py
+```
+
+![Tampilan]({{ site.baseurl }}/assets/images/simple_line_chart.png)

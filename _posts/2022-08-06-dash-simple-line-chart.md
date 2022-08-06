@@ -29,7 +29,7 @@ Selanjutnya kita akan membuat layout atau tata letak.
 import dash
 ...
 
-app = dash.Dash(__name__)
+app = dash.Dash(\_\_name\_\_)
 
 app.layout = html.Div([
 				# Div utama

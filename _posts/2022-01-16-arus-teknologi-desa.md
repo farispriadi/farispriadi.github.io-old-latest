@@ -2,7 +2,7 @@
 layout: post
 title:  "Arus Teknologi Informasi di Desa"
 author: faris
-categories: [ opini, tutorial ]
+categories: [ opini, teknologi ]
 image: assets/images/3.jpg
 tags: [featured]
 ---

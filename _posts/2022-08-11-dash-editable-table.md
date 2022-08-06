@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "We all wait for summer"
-author: jane
-categories: [ Jekyll, tutorial ]
+title:  "Membuat cell pada Dash Data Table dapat diedit"
+author: faris
+categories: [ dashm, plotly, table, tutorial ]
 image: assets/images/1.jpg
 tags: [featured]
 ---

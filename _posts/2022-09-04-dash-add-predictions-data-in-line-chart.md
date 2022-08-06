@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Education must also train one for quick, resolute and effective thinking."
-categories: [ Jekyll, tutorial ]
+title:  "Menambahkan data predisksi pada Line Chart dengan Dash Plotly."
+author: faris
+categories: [ dash, plotly, line chart, tutorial ]
 image: assets/images/3.jpg
 ---
 There are lots of powerful things you can do with the Markdown editor

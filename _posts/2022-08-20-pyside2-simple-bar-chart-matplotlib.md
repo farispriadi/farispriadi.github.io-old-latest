@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Quick Start Guide"
-author: sal
-categories: [ Jekyll, tutorial ]
+title:  "Membuat Bar Chart dengan Matplotlib pada PySide2"
+author: faris
+categories: [ pyside2, matplotlib, line chart, tutorial ]
 image: assets/images/12.jpg
 ---
 

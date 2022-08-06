@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "What is Jekyll"
-author: jane
-categories: [ Jekyll, tutorial ]
+title:  "Menyembunyikan x axis dan y axis pada Bar Chart"
+author: faris
+categories: [ dash, plotly, bar chart, tutorial ]
 image: assets/images/11.jpg
 ---
 

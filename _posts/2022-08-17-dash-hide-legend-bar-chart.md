@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Markdown Example"
-author: jane
-categories: [ Jekyll, tutorial ]
+title:  "Menyembunyikan legend pada Bar Chart"
+author: faris
+categories: [ dash, plotly, bar chart, tutorial ]
 image: assets/images/6.jpg
 tags: featured
 ---

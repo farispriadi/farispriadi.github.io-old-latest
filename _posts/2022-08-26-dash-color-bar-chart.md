@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Never stopped worrying or loving the bomb"
-author: sal
-categories: [ Jekyll ]
+title:  "Mengubah warna pada Bar Chart."
+author: faris
+categories: [ dash, plotly, bar chart, tutorial ]
 image: assets/images/14.jpg
 tags: featured
 ---

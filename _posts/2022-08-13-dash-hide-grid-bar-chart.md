@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Powerful things you can do with the Markdown editor"
-author: sal
-categories: [ Jekyll, tutorial ]
+title:  "Menyembunyikan grid Bar Chart"
+author: faris
+categories: [ dash, plotly, bar chart, tutorial ]
 image: assets/images/4.jpg
 tags: [featured]
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  "Membuat Table dengan Dash Plotly"
 author: faris
 categories: [ dash, plotly, table, tutorial ]
-image: assets/images/15.jpg
+image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg
 ---
 Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom. Tabel lebih mudah digunakan untuk menyajikan komparasi data yang mempunyai perbedaan unit. Dengan menggunakan Dash Datatable kita akan membuat tampilan tabel sederhana.
 
@@ -76,6 +76,8 @@ if __name__ == "__main__":
 ```
 
 Kita perlu membuat sebuah Dataframe yang disimpan dalam variable *df*. Dataframe tersebut dibuat dengan membaca file csv dari url yang kami ambil dari Bandung Open Data dengan judul **Tahun 2017 - Data Laporan Iklim Kota Bandung**. Untuk membuat judul dengan ukuran heading 2 perlu menggunakan kode *html.H2*. Sedangkan tabel dibuat dengan meninstantiasi objek dari *dash_table.DataTable*, dimana argumen pertama diisi dengan *dictionary* yang merupakan konversi dari Dataframe dan argumen kedua adalah nama sebuah *list of dictionary* untuk membuat label kolom tabel.
+
+## Menjalankan Kode
 
 Selanjutnya kita bisa simpan dengan nama *simple_table.py* , dan menjalankan kode diatas dengan perintah seperti di bawah ini.
 

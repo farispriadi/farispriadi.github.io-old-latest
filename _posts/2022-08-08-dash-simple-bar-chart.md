@@ -2,14 +2,135 @@
 layout: post
 title:  "Membuat Bar Chart dengan Dash Plotly."
 categories: [ dash, plotly, bar chart, tutorial ]
-image: assets/images/3.jpg
+image: https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg
 ---
-The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter. 
 
-An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”. 
+Bar chart atau diagram batang digunakan untuk menampilkan data yang berkategori. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Bar Chart. Berbeda denga Line Chart, untuk membuat Bar Chart, kita akan membutuhkan *plotly graph objects*.
 
-> It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story. 
 
-The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. 
+## Import modul yang diperlukan
 
-As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.
+Untuk membuat bar chart sederhana, kita memerlukan beberapa modul dalam dash plotly.
+
+```
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+
+```
+
+*import dash* digunakan untuk mengimpor modul dash. *from dash import html* digunakan untuk mengimpor html dash atau *dash html components*, komponen ini memungkinkan kita memasukkan komponen HTML dengan menggunakan sintaks python. *from dash import dcc* digunakan untuk mengimpor komponen core dari dash atau *dash core components* yang digunakan untuk memasukkan komponen interaktif termasuk membuat grafik. Untuk bar chart kita memerlukan *plotly graph object* karena dalam *dcc.Graph* hanya menyediakan Line Chart dan Scatter Plot.
+
+## Membuat Layout
+
+Selanjutnya kita akan membuat layout atau tata letak.
+
+```
+import dash
+...
+
+
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+				]),
+			])
+
+```
+
+*app = dash.Dash(\_\_name\_\_)* kode ini adalah langkah awal kita untuk membuat objek dash yang disimpan dalam variable *app*. Selanjutnya *app.layout*, kita akan meng-assign atau memasukkan layout kita ke dalam atribut layout yang berada di dalam *app*. Layout tersebut akan kita buat dengan satu *Div* utama dan di dalamnya terdapat dua *Div* anakan. Dimana *Div* pertama untuk meletakkan judul dan *Div* kedua untuk meletakkan grafik. Tanda *#* merupakan *comment* yang digunakan sebagai keterangan saja.
+
+## Menuliskan konten
+
+Selanjutnya kita akan menambahkan judul dan grafiknya
+
+```
+import dash
+...
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+						)
+
+
+					)
+				]),
+			])
+```
+
+*html.H2* kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek *Graph* yang berada pada modul *dcc*. Pada kode di atas kita akan membuat bar chart sederhana . *figure* pada kelas Graph diisi dengan objek Figure dari *graph_objects*, dan argumen untuk kontruktor dari *go.Figure* diisi dengan *go.Bar* untuk secara spesifik membuat bar chart. Nilai *x* dan *y* axis disi dengan sebuah list yang mempunyai panjang yang sama. Misalkan x adalah *list* nama provinsi dan y adalah *list* jumlah kabupaten dan kota dalam provnsi tersebut.
+
+## Menjalankan Kode
+
+Dengan demikian kode secara keseluruhan adalah sebagai berikut:
+
+```
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+						)
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+```
+
+*app.run_server()* kode ini ditambahkan ke dalam main agar server Dash dapat berjalan. File ini akan disimpan dengan nama *simple_bar_chart.py*, Anda dapat mengganti nama sesuai dengan yang diinginkan.
+
+Seperti kode python lainnya, untuk menjalankannya kode ini, bisa menggunakan IDE seperti PyCharm atau run di CMD  jika di windows atau Terminal jika di distibusi Linux Ubuntu. Jika menggunakan terminal maka cara menjalankan kode dari Linux Ubuntu.
+
+```
+$ python simple_bar_chart.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+```
+
+Sekarang anda dapat membuka browser dan mengakses aplikasi dash dengan alamat url *http://127.0.0.1:8050* 
+![Tampilan]({{ site.baseurl }}/assets/images/simple_bar_chart.png)

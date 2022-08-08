@@ -19,7 +19,7 @@ from dash import html
 from dash import dcc
 ```
 
-*import dash* digunakan untuk menimpor fungsionalitas pada modul dash. *from dash import html* digunakan untuk mengimpor html dash atau *dash html components*, komponen ini memungkinkan kita memasukkan komponen HTML dengan menggunakan sintaks python. *from dash import dcc* digunakan untuk mengimpor komponen core dari dash atau *dash core components* yang digunakan untuk memasukkan komponen interaktif termasuk membuat grafik.
+*import dash* digunakan untuk mengimpor modul dash. *from dash import html* digunakan untuk mengimpor html dash atau *dash html components*, komponen ini memungkinkan kita memasukkan komponen HTML dengan menggunakan sintaks python. *from dash import dcc* digunakan untuk mengimpor komponen core dari dash atau *dash core components* yang digunakan untuk memasukkan komponen interaktif termasuk membuat grafik.
 
 ## Membuat Layout
 
@@ -134,6 +134,15 @@ Seperti kode python lainnya, untuk menjalankannya kode ini, bisa menggunakan IDE
 
 ```
 $ python simple_line_chart.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
 ```
 
+Sekarang anda dapat membuka browser dan mengakses aplikasi dash dengan alamat url *http://127.0.0.1:8050* 
 ![Tampilan]({{ site.baseurl }}/assets/images/simple_line_chart.png)

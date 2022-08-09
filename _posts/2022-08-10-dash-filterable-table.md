@@ -2,8 +2,8 @@
 layout: post
 title:  "Mem-filter nilai dalam sebuah kolom pada Dash Data Table"
 author: faris
-categories: [ dashm, plotly, table, tutorial ]
-image: assets/images/7.jpg
+categories: [ dash, plotly, table, tutorial ]
+image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg
 ---
 Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, is one of the chief aims of education. Education must enable one to sift and weigh evidence, to discern the true from the false, the real from the unreal, and the facts from the fiction.
 

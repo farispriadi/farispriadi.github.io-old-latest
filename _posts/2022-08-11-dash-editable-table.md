@@ -2,8 +2,8 @@
 layout: post
 title:  "Membuat cell pada Dash Data Table dapat diedit"
 author: faris
-categories: [ dashm, plotly, table, tutorial ]
-image: assets/images/1.jpg
+categories: [ dash, plotly, table, tutorial ]
+image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg
 tags: [featured]
 ---
 This is changed. As I engage in the so-called "bull sessions" around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the "brethren" think that <a href="#">education should equip</a> them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.

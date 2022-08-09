@@ -2,17 +2,128 @@
 layout: post
 title:  "Mengurutkan Nilai pada Dash Data Table"
 author: faris
-categories: [ dashm, plotly, table, tutorial ]
-image: assets/images/2.jpg
+categories: [ dash, plotly, table, tutorial ]
+image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg
 ---
-The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter. 
-
-As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.
-
-> It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story. 
+Kita sering menemukan tabel dan dalam membaca tabel tentu saja mau tidak mau kita akan mulai dari kiri atas menuju ke kanan atas untuk membaca semua kolom, kemudian secara zigzag pindah ke kiri di bawah menuju kanan bawah. Namun Setelah kita menemukan kolom yang kita lebih berikan perhatian, kita cenderung membaca dari atas ke bawah. Untuk memudahkan dalam pembacaan data, akan lebih mudah kiranya jika kita dapat mengurutkan sebuah kolom baik urut secara *ascending* maupun *descending*.
 
 
-An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”. 
+## Membuat Table
 
-The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. 
+Dengan Dash Datatable memungkinkan sebuah kolom dari sebuah table dapat diurutkan. Untuk membuat sebuah tabel dapat diurutkan kita akan memerlukan parameter *sort_action='native'* pada saat membuat objek DataTable. Kita akan menggunakan kode dari [Membuat Table dengan Dash Plotly](https://farispriadi.github.io/dash-data-table/)
 
+
+```
+import dash
+from dash import dash_table
+from dash import html
+import pandas as pd
+
+app = dash.Dash(__name__)
+
+df = pd.DataFrame("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
+
+app.layout = html.Div([
+				html.Div([
+					# Div untuk judul
+					html.H2("Tabel Sederhana Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk table
+					dash_table.DataTable(df.to_dict('records'), [ {'name': i, 'id': i} for i in df.columns])
+				]),
+			])
+
+if __name__ == "__main__":
+	app.run_server()
+
+```
+
+## Menambahkan Fitur Pengurutan (Sorting)
+
+Kita perlu menambahkan *sort_action='native'* pada saat instantiasi DataTable, sehingga kode akan menjadi sebagai berikut. selain itu kita akan menambahkan *keyword argument* yaitu *data* dan *columns*.
+
+```
+import dash
+from dash import dash_table
+from dash import html
+import pandas as pd
+
+app = dash.Dash(__name__)
+
+df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
+
+app.layout = html.Div([
+				html.Div([
+					# Div untuk judul
+					html.H2("Tabel Dengan  Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk table
+					dash_table.DataTable(
+						data = df.to_dict('records'), 
+						columns=[ {'name': i, 'id': i} for i in df.columns],
+						sort_action='native',
+					)
+				]),
+			])
+
+if __name__ == "__main__":
+	app.run_server()
+
+```
+Dari kode di atas kita sudah bisa melakukan pengurutan pada sebuah tabel. Namun jika kita memerlukan fitur agar pengurutan bisa dilakukan pada multi kolom, perlu ada tambahan argumen lagi yaitu *sort_mode='multi'*. 
+
+
+```
+import dash
+from dash import dash_table
+from dash import html
+import pandas as pd
+
+app = dash.Dash(__name__)
+
+df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
+
+app.layout = html.Div([
+				html.Div([
+					# Div untuk judul
+					html.H2("Tabel Dengan  Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk table
+					dash_table.DataTable(
+						data = df.to_dict('records'), 
+						columns=[ {'name': i, 'id': i} for i in df.columns],
+						sort_action='native',
+						sort_mode='multi',
+					)
+				]),
+			])
+
+if __name__ == "__main__":
+	app.run_server()
+
+```
+
+Dengan menambahkan fitur *sort_mode='multi'* memungkinkan tabel dapat diurutkan berdasarkan 2 atau lebih kolom.
+
+
+## Menjalankan Kode
+
+Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file *sortable_table.py*) lalu kita jalankan dengan perintah.
+
+```
+$ python sortable_table.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+```
+
+
+Anda bisa buka browser dan arahkan ke url *http://127.0.0.1:8050*.

@@ -4,6 +4,7 @@ title:  "Membuat Line Chart dengan Dash Plotly."
 author: faris
 categories: [ dash, plotly, line chart, tutorial ]
 image: https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg
+tags: [featured]
 ---
 
 Line chart atau diagram garis digunakan untuk menampilkan tren data yang kontinyu, misalkan time series data. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Line Chart.

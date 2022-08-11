@@ -3,6 +3,7 @@ layout: post
 title:  "Membuat Bar Chart dengan Dash Plotly."
 categories: [ dash, plotly, bar chart, tutorial ]
 image: https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg
+tags: [featured]
 ---
 
 Bar chart atau diagram batang digunakan untuk menampilkan data yang berkategori. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Bar Chart. Berbeda denga Line Chart, untuk membuat Bar Chart, kita akan membutuhkan *plotly graph objects*.

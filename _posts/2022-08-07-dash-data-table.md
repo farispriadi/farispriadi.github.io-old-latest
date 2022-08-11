@@ -4,6 +4,7 @@ title:  "Membuat Table dengan Dash Plotly"
 author: faris
 categories: [ dash, plotly, table, tutorial ]
 image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg
+tags: [featured]
 ---
 Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom. Tabel lebih mudah digunakan untuk menyajikan komparasi data yang mempunyai perbedaan unit. Dengan menggunakan Dash Datatable kita akan membuat tampilan tabel sederhana.
 

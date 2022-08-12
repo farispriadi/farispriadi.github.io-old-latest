@@ -14,6 +14,7 @@ Line chart atau diagram garis digunakan untuk menampilkan tren data yang kontiny
 
 Untuk membuat line chart sederhana, kita memerlukan beberapa modul dalam dash plotly.
 
+{% include codeHeader.html %}
 ```
 import dash
 from dash import html
@@ -26,6 +27,7 @@ from dash import dcc
 
 Selanjutnya kita akan membuat layout atau tata letak.
 
+{% include codeHeader.html %}
 ```
 import dash
 ...
@@ -50,6 +52,7 @@ app.layout = html.Div([
 
 Selanjutnya kita akan menambahkan judul dan grafiknya
 
+{% include codeHeader.html %}
 ```
 import dash
 ...
@@ -91,6 +94,7 @@ app.layout = html.Div([
 
 Dengan demikian kode secara keseluruhan adalah sebagai berikut:
 
+{% include codeHeader.html %}
 ```
 import dash
 from dash import html
@@ -133,6 +137,7 @@ if __name__ == '__main__':
 
 Seperti kode python lainnya, untuk menjalankannya kode ini, bisa menggunakan IDE seperti PyCharm atau run di CMD  jika di windows atau Terminal jika di distibusi Linux Ubuntu. Jika menggunakan terminal maka cara menjalankan kode dari Linux Ubuntu.
 
+{% include codeHeader.html %}
 ```
 $ python simple_line_chart.py
 Dash is running on http://127.0.0.1:8050/

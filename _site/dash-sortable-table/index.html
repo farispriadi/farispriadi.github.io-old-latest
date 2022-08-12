@@ -4,27 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inovasi Desa | Programmer Biasa</title>
+    <title>Mengurutkan Nilai pada Dash Data Table | Programmer Biasa</title>
 
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Inovasi Desa | Programmer Biasa</title>
+<title>Mengurutkan Nilai pada Dash Data Table | Programmer Biasa</title>
 <meta name="generator" content="Jekyll v4.2.1" />
-<meta property="og:title" content="Inovasi Desa" />
+<meta property="og:title" content="Mengurutkan Nilai pada Dash Data Table" />
 <meta name="author" content="faris" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Penting kita sadari bahwa desa memegang peran krusial dari kecanggihan dan gemerlapnya kota besar. Desa adalah penyumbang berlian yang kini dinikmati kota besar. Penyumbang bahan makanan tersegar dan terbaik ya berasal dari desa. Namun hal yang aneh, hasil terbaik desa mereka jual ke kota besar, dengan harapan mendapat keuntungan yang besar, sedangkan mereka sendiri membutuhkan barang tersebut. Terkadang malahan orang desa bukannya menikmati bahan makanan terbaik yang mereka tanam, malah membeli produk impor serupa dari pemerintah yang mempunyai grade lebih rendah. Miris bukan ?." />
-<meta property="og:description" content="Penting kita sadari bahwa desa memegang peran krusial dari kecanggihan dan gemerlapnya kota besar. Desa adalah penyumbang berlian yang kini dinikmati kota besar. Penyumbang bahan makanan tersegar dan terbaik ya berasal dari desa. Namun hal yang aneh, hasil terbaik desa mereka jual ke kota besar, dengan harapan mendapat keuntungan yang besar, sedangkan mereka sendiri membutuhkan barang tersebut. Terkadang malahan orang desa bukannya menikmati bahan makanan terbaik yang mereka tanam, malah membeli produk impor serupa dari pemerintah yang mempunyai grade lebih rendah. Miris bukan ?." />
-<link rel="canonical" href="http://localhost:4000/inovasi-desa/" />
-<meta property="og:url" content="http://localhost:4000/inovasi-desa/" />
+<meta name="description" content="Kita sering menemukan tabel dan dalam membaca tabel tentu saja mau tidak mau kita akan mulai dari kiri atas menuju ke kanan atas untuk membaca semua kolom, kemudian secara zigzag pindah ke kiri di bawah menuju kanan bawah. Namun Setelah kita menemukan kolom yang kita lebih berikan perhatian, kita cenderung membaca dari atas ke bawah. Untuk memudahkan dalam pembacaan data, akan lebih mudah kiranya jika kita dapat mengurutkan sebuah kolom baik urut secara ascending maupun descending." />
+<meta property="og:description" content="Kita sering menemukan tabel dan dalam membaca tabel tentu saja mau tidak mau kita akan mulai dari kiri atas menuju ke kanan atas untuk membaca semua kolom, kemudian secara zigzag pindah ke kiri di bawah menuju kanan bawah. Namun Setelah kita menemukan kolom yang kita lebih berikan perhatian, kita cenderung membaca dari atas ke bawah. Untuk memudahkan dalam pembacaan data, akan lebih mudah kiranya jika kita dapat mengurutkan sebuah kolom baik urut secara ascending maupun descending." />
+<link rel="canonical" href="http://localhost:4000/dash-sortable-table/" />
+<meta property="og:url" content="http://localhost:4000/dash-sortable-table/" />
 <meta property="og:site_name" content="Programmer Biasa" />
-<meta property="og:image" content="http://localhost:4000/assets/images/home.jpg" />
+<meta property="og:image" content="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-01-05T00:00:00+07:00" />
+<meta property="article:published_time" content="2022-08-09T00:00:00+07:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/images/home.jpg" />
-<meta property="twitter:title" content="Inovasi Desa" />
+<meta property="twitter:image" content="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" />
+<meta property="twitter:title" content="Mengurutkan Nilai pada Dash Data Table" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/inovasi-desa/"},"url":"http://localhost:4000/inovasi-desa/","image":"http://localhost:4000/assets/images/home.jpg","author":{"@type":"Person","name":"faris"},"headline":"Inovasi Desa","dateModified":"2022-01-05T00:00:00+07:00","datePublished":"2022-01-05T00:00:00+07:00","description":"Penting kita sadari bahwa desa memegang peran krusial dari kecanggihan dan gemerlapnya kota besar. Desa adalah penyumbang berlian yang kini dinikmati kota besar. Penyumbang bahan makanan tersegar dan terbaik ya berasal dari desa. Namun hal yang aneh, hasil terbaik desa mereka jual ke kota besar, dengan harapan mendapat keuntungan yang besar, sedangkan mereka sendiri membutuhkan barang tersebut. Terkadang malahan orang desa bukannya menikmati bahan makanan terbaik yang mereka tanam, malah membeli produk impor serupa dari pemerintah yang mempunyai grade lebih rendah. Miris bukan ?.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"faris"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dash-sortable-table/"},"url":"http://localhost:4000/dash-sortable-table/","image":"https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg","author":{"@type":"Person","name":"faris"},"headline":"Mengurutkan Nilai pada Dash Data Table","dateModified":"2022-08-09T00:00:00+07:00","datePublished":"2022-08-09T00:00:00+07:00","description":"Kita sering menemukan tabel dan dalam membaca tabel tentu saja mau tidak mau kita akan mulai dari kiri atas menuju ke kanan atas untuk membaca semua kolom, kemudian secara zigzag pindah ke kiri di bawah menuju kanan bawah. Namun Setelah kita menemukan kolom yang kita lebih berikan perhatian, kita cenderung membaca dari atas ke bawah. Untuk memudahkan dalam pembacaan data, akan lebih mudah kiranya jika kita dapat mengurutkan sebuah kolom baik urut secara ascending maupun descending.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"faris"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -199,7 +199,7 @@ var documents = [{
     "id": 20,
     "url": "http://localhost:4000/dash-simple-line-chart/",
     "title": "Membuat Line Chart dengan Dash Plotly.",
-    "body": "2022/08/06 - Line chart atau diagram garis digunakan untuk menampilkan tren data yang kontinyu, misalkan time series data. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Line Chart. Import modul yang diperlukan: Untuk membuat line chart sederhana, kita memerlukan beberapa modul dalam dash plotly. {% include codeHeader. html %} import dashfrom dash import htmlfrom dash import dccimport dash digunakan untuk mengimpor modul dash. from dash import html digunakan untuk mengimpor html dash atau dash html components, komponen ini memungkinkan kita memasukkan komponen HTML dengan menggunakan sintaks python. from dash import dcc digunakan untuk mengimpor komponen core dari dash atau dash core components yang digunakan untuk memasukkan komponen interaktif termasuk membuat grafik. Membuat Layout: Selanjutnya kita akan membuat layout atau tata letak. {% include codeHeader. html %} import dash. . . app = dash. Dash(__name__)app. layout = html. Div([				# Div utama				html. Div([					# Div untuk Judul				]),				html. Div([					# Div untuk Line Chart				]),			])app = dash. Dash(__name__) kode ini adalah langkah awal kita untuk membuat objek dash yang disimpan dalam variable app. Selanjutnya app. layout, kita akan meng-assign atau memasukkan layout kita ke dalam atribut layout yang berada di dalam app. Layout tersebut akan kita buat dengan satu Div utama dan di dalamnya terdapat dua Div anakan. Dimana Div pertama untuk meletakkan judul dan Div kedua untuk meletakkan grafik. Tanda # merupakan comment yang digunakan sebagai keterangan saja. Menuliskan konten: Selanjutnya kita akan menambahkan judul dan grafiknya {% include codeHeader. html %} import dash. . . app = dash. Dash(__name__)app. layout = html. Div([				# Div utama				html. Div([					# Div untuk Judul					html. H2( Line Chart Sederhana dengan Dash Plotly )				]),				html. Div([					# Div untuk Line Chart					dcc. Graph( figure =						{							'data' : [{								'x' : [1,2,3,4,5,6,7,8,9],								'y' : [1,4,9,16,25,36,49,64,81],								'mode': 'lines',							}],							'layout' : {								'title' : 'Pangkat Kuadrat',							}						}					)				]),			])html. H2 kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek Graph yang berada pada modul dcc. Pada kode di atas kita akan membuat line chart sederhana . figure pada kelas Graph mempunyai nilai berupa dict, dimana dictionary tersebut berisi key data untuk mengisi data set dan key layout untuk mengkonfigurasi tata letak grafik. Untuk membuat line chart pada key mode diisi dengan nilai ‘lines’. Menjalankan Kode: Dengan demikian kode secara keseluruhan adalah sebagai berikut: {% include codeHeader. html %} import dashfrom dash import htmlfrom dash import dccapp = dash. Dash(__name__)app. layout = html. Div([				# Div utama				html. Div([					# Div untuk Judul					html. H2( Line Chart Sederhana dengan Dash Plotly )				]),				html. Div([					# Div untuk Line Chart					dcc. Graph( figure =						{							'data' : [{								'x' : [1,2,3,4,5,6,7,8,9],								'y' : [1,4,9,16,25,36,49,64,81],								'mode': 'lines',							}],							'layout' : {								'title' : 'Pangkat Kuadrat',							}						}					)				]),			])if __name__ == '__main__':	app. run_server()app. run_server() kode ini ditambahkan ke dalam main agar server Dash dapat berjalan. File ini akan disimpan dengan nama simple_line_chart. py, Anda dapat mengganti nama sesuai dengan yang diinginkan. Seperti kode python lainnya, untuk menjalankannya kode ini, bisa menggunakan IDE seperti PyCharm atau run di CMD jika di windows atau Terminal jika di distibusi Linux Ubuntu. Jika menggunakan terminal maka cara menjalankan kode dari Linux Ubuntu. {% include codeHeader. html %} $ python simple_line_chart. pyDash is running on http://127. 0. 0. 1:8050/ * Serving Flask app 'test' (lazy loading) * Environment: production  WARNING: This is a development server. Do not use it in a production deployment.  Use a production WSGI server instead. * Debug mode: off * Running on http://127. 0. 0. 1:8050 (Press CTRL+C to quit)Sekarang anda dapat membuka browser dan mengakses aplikasi dash dengan alamat url http://127. 0. 0. 1:8050 "
+    "body": "2022/08/06 - Line chart atau diagram garis digunakan untuk menampilkan tren data yang kontinyu, misalkan time series data. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Line Chart. Import modul yang diperlukan: Untuk membuat line chart sederhana, kita memerlukan beberapa modul dalam dash plotly.    Copy import dashfrom dash import htmlfrom dash import dccimport dash digunakan untuk mengimpor modul dash. from dash import html digunakan untuk mengimpor html dash atau dash html components, komponen ini memungkinkan kita memasukkan komponen HTML dengan menggunakan sintaks python. from dash import dcc digunakan untuk mengimpor komponen core dari dash atau dash core components yang digunakan untuk memasukkan komponen interaktif termasuk membuat grafik. Membuat Layout: Selanjutnya kita akan membuat layout atau tata letak.    Copy import dash. . . app = dash. Dash(__name__)app. layout = html. Div([				# Div utama				html. Div([					# Div untuk Judul				]),				html. Div([					# Div untuk Line Chart				]),			])app = dash. Dash(__name__) kode ini adalah langkah awal kita untuk membuat objek dash yang disimpan dalam variable app. Selanjutnya app. layout, kita akan meng-assign atau memasukkan layout kita ke dalam atribut layout yang berada di dalam app. Layout tersebut akan kita buat dengan satu Div utama dan di dalamnya terdapat dua Div anakan. Dimana Div pertama untuk meletakkan judul dan Div kedua untuk meletakkan grafik. Tanda # merupakan comment yang digunakan sebagai keterangan saja. Menuliskan konten: Selanjutnya kita akan menambahkan judul dan grafiknya    Copy import dash. . . app = dash. Dash(__name__)app. layout = html. Div([				# Div utama				html. Div([					# Div untuk Judul					html. H2( Line Chart Sederhana dengan Dash Plotly )				]),				html. Div([					# Div untuk Line Chart					dcc. Graph( figure =						{							'data' : [{								'x' : [1,2,3,4,5,6,7,8,9],								'y' : [1,4,9,16,25,36,49,64,81],								'mode': 'lines',							}],							'layout' : {								'title' : 'Pangkat Kuadrat',							}						}					)				]),			])html. H2 kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek Graph yang berada pada modul dcc. Pada kode di atas kita akan membuat line chart sederhana . figure pada kelas Graph mempunyai nilai berupa dict, dimana dictionary tersebut berisi key data untuk mengisi data set dan key layout untuk mengkonfigurasi tata letak grafik. Untuk membuat line chart pada key mode diisi dengan nilai ‘lines’. Menjalankan Kode: Dengan demikian kode secara keseluruhan adalah sebagai berikut:    Copy import dashfrom dash import htmlfrom dash import dccapp = dash. Dash(__name__)app. layout = html. Div([				# Div utama				html. Div([					# Div untuk Judul					html. H2( Line Chart Sederhana dengan Dash Plotly )				]),				html. Div([					# Div untuk Line Chart					dcc. Graph( figure =						{							'data' : [{								'x' : [1,2,3,4,5,6,7,8,9],								'y' : [1,4,9,16,25,36,49,64,81],								'mode': 'lines',							}],							'layout' : {								'title' : 'Pangkat Kuadrat',							}						}					)				]),			])if __name__ == '__main__':	app. run_server()app. run_server() kode ini ditambahkan ke dalam main agar server Dash dapat berjalan. File ini akan disimpan dengan nama simple_line_chart. py, Anda dapat mengganti nama sesuai dengan yang diinginkan. Seperti kode python lainnya, untuk menjalankannya kode ini, bisa menggunakan IDE seperti PyCharm atau run di CMD jika di windows atau Terminal jika di distibusi Linux Ubuntu. Jika menggunakan terminal maka cara menjalankan kode dari Linux Ubuntu.    Copy $ python simple_line_chart. pyDash is running on http://127. 0. 0. 1:8050/ * Serving Flask app 'test' (lazy loading) * Environment: production  WARNING: This is a development server. Do not use it in a production deployment.  Use a production WSGI server instead. * Debug mode: off * Running on http://127. 0. 0. 1:8050 (Press CTRL+C to quit)Sekarang anda dapat membuka browser dan mengakses aplikasi dash dengan alamat url http://127. 0. 0. 1:8050 "
     }, {
     "id": 21,
     "url": "http://localhost:4000/arus-teknologi-desa/",
@@ -286,19 +286,23 @@ function lunr_search(term) {
 					<p class="text-uppercase font-weight-bold">
                         <span class="catlist">
 						
-                          <a class="sscroll text-danger" href="/categories.html#opini">opini</a><span class="sep">, </span>
+                          <a class="sscroll text-danger" href="/categories.html#dash">dash</a><span class="sep">, </span>
                         
-                          <a class="sscroll text-danger" href="/categories.html#desa">desa</a><span class="sep">, </span>
+                          <a class="sscroll text-danger" href="/categories.html#plotly">plotly</a><span class="sep">, </span>
+                        
+                          <a class="sscroll text-danger" href="/categories.html#table">table</a><span class="sep">, </span>
+                        
+                          <a class="sscroll text-danger" href="/categories.html#tutorial">tutorial</a><span class="sep">, </span>
                         
                         </span>
 					</p>
-					<h1 class="display-4 mb-4 article-headline">Inovasi Desa</h1>
+					<h1 class="display-4 mb-4 article-headline">Mengurutkan Nilai pada Dash Data Table</h1>
 					<div class="d-flex align-items-center">
                         
                         <img class="rounded-circle" src="/assets/images/avatar1.png" alt="Faris Priadi" width="70"/>
                         
 						<small class="ml-3"> Faris Priadi <span><a target="_blank" href="https://twitter.com/farispriadi" class="btn btn-outline-success btn-sm btn-round ml-1">Follow</a></span>
-                            <span class="text-muted d-block mt-1">Jan 05, 2022 · <span class="reading-time">
+                            <span class="text-muted d-block mt-1">Aug 09, 2022 · <span class="reading-time">
   
   
     2 mins read
@@ -310,7 +314,7 @@ function lunr_search(term) {
 				</div>
                 
 				<div class="col-md-6 pr-0 align-self-center">
-					<img class="rounded" src="/assets/images/home.jpg" alt="Inovasi Desa">
+					<img class="rounded" src="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" alt="Mengurutkan Nilai pada Dash Data Table">
 				</div>
                 
 			</div>
@@ -350,28 +354,125 @@ function lunr_search(term) {
             
             <!-- Article -->
 			<article class="article-post">                
-			<p>Penting kita sadari bahwa desa memegang peran krusial dari kecanggihan dan gemerlapnya kota besar. Desa adalah penyumbang berlian yang kini dinikmati kota besar. Penyumbang bahan makanan tersegar dan terbaik ya berasal dari desa. Namun hal yang aneh, hasil terbaik desa mereka jual ke kota besar, dengan harapan mendapat keuntungan yang besar, sedangkan mereka sendiri membutuhkan barang tersebut. Terkadang malahan orang desa bukannya menikmati bahan makanan terbaik yang mereka tanam, malah membeli produk impor serupa dari pemerintah yang mempunyai grade lebih rendah. Miris bukan ?.</p>
+			<p>Kita sering menemukan tabel dan dalam membaca tabel tentu saja mau tidak mau kita akan mulai dari kiri atas menuju ke kanan atas untuk membaca semua kolom, kemudian secara zigzag pindah ke kiri di bawah menuju kanan bawah. Namun Setelah kita menemukan kolom yang kita lebih berikan perhatian, kita cenderung membaca dari atas ke bawah. Untuk memudahkan dalam pembacaan data, akan lebih mudah kiranya jika kita dapat mengurutkan sebuah kolom baik urut secara <em>ascending</em> maupun <em>descending</em>.</p>
 
-<h4 id="inovasi-dan-teknologi-di-desa">Inovasi dan Teknologi di Desa</h4>
+<h2 id="membuat-table">Membuat Table</h2>
 
-<p>Isu mengenai penggunaan teknologi untuk melakukan inovasi di desa bukanlah barang baru. Mungkin malah sudah menjadi isu lama. Implementasinya sudah banyak, banyak pula yang berhasil. Namun terkadang inovasi dan pemanfaatan teknologi ini bukanlah untuk memakmurkan masyarakat desa itu, tapi memperkaya kota besar. Upsss..terlihat sinis sekali ya ..?</p>
+<p>Dengan Dash Datatable memungkinkan sebuah kolom dari sebuah table dapat diurutkan. Untuk membuat sebuah tabel dapat diurutkan kita akan memerlukan parameter <em>sort_action=’native’</em> pada saat membuat objek DataTable. Kita akan menggunakan kode dari <a href="https://farispriadi.github.io/dash-data-table/">Membuat Table dengan Dash Plotly</a></p>
 
-<p>Dengan terbukanya informasi dan ilmu pengetahuan melalui internet, kita mulai disuguhkan kilau berlian yang ada di desa. Desa-desa mulai memperbaiki diri dan bervisi melakukan inovasi Dari-Oleh-Untuk Desa. Kita bisa <em>googling</em> atau cari di <em>youtube</em>, dimana orang-orang di desa bisa membuat helikopter, robotik bahkan hacking tanpa perlu mereka pergi ke kota. Kota besar perlu waspada.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import dash_table
+from dash import html
+import pandas as pd
 
-<p>Banyak desa yang berhasil dengan transformasi contohnya dengan BUMDes-nya. Ini kabar yang baik menurut saya. Bayangkan jika desa bisa mengelola sumber daya mereka sendiri dan menyajikannya dalam barang/jasa yang siap konsumsi, betapa akan kocar kacirnya kota besar. Mungkin perputaran uang tidak akan berada di kota lagi, tapi tersebar secara <em>distributed</em> di desa-desa sesuai dengan kemampuannya. Tentu saja keluarnya kebijakan mangenai undang-undang desa membantu <em>environment</em> desa dalam bertumbuh.</p>
+app = dash.Dash(__name__)
 
-<p>Menurut para ahli kemampuan desa dalam mengelola sumber daya secara maksimal akan semakin terasa manfaatnya jika bersinergi langsung dengan masyarakat desanya. Berfokus bukan pada keuntungan berupa uang, namun berfokus pada kemakmuran warganya. Sesuai dengan Undang-Undang 1945 pasal 33. Satu hal lagi yang akan mem-<em>booster</em> pengelolaan di desa adalah melakukan <em>link-and-math</em> dengan desa sekitar. Sehingga beberapa desa sekitar dapat saling bertukar keuntungan dan kemampuan terbaik mereka. Tentu saja setiap desa perlu menentukan dirinya sebagai <em>centra</em> atau pusat barang yang mempunyai <em>niche</em> pasar tertarget. Jika seperti ini sepertinya sulit menciptakan monopoli.</p>
+df = pd.DataFrame("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
 
-<p>Ketahanan desa adalah pertahanan pertama sebuah negara. Karena dengan mandirinya desa-desa di Indonesia, tidak perlu ada lagi bansos dari pemerintah pusat. Desa dan warganya dapat menghidupi mereka sendiri, memakmurkan warga mereka sendiri. Dan yang jelas hasil terbaik desa akan dinikmati oleh warganya sendiri.</p>
+app.layout = html.Div([
+				html.Div([
+					# Div untuk judul
+					html.H2("Tabel Sederhana Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk table
+					dash_table.DataTable(df.to_dict('records'), [ {'name': i, 'id': i} for i in df.columns])
+				]),
+			])
 
+if __name__ == "__main__":
+	app.run_server()
+
+</code></pre></div></div>
+
+<h2 id="menambahkan-fitur-pengurutan-sorting">Menambahkan Fitur Pengurutan (Sorting)</h2>
+
+<p>Kita perlu menambahkan <em>sort_action=’native’</em> pada saat instantiasi DataTable, sehingga kode akan menjadi sebagai berikut. selain itu kita akan menambahkan <em>keyword argument</em> yaitu <em>data</em> dan <em>columns</em>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import dash_table
+from dash import html
+import pandas as pd
+
+app = dash.Dash(__name__)
+
+df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
+
+app.layout = html.Div([
+				html.Div([
+					# Div untuk judul
+					html.H2("Tabel Dengan  Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk table
+					dash_table.DataTable(
+						data = df.to_dict('records'), 
+						columns=[ {'name': i, 'id': i} for i in df.columns],
+						sort_action='native',
+					)
+				]),
+			])
+
+if __name__ == "__main__":
+	app.run_server()
+
+</code></pre></div></div>
+<p>Dari kode di atas kita sudah bisa melakukan pengurutan pada sebuah tabel. Namun jika kita memerlukan fitur agar pengurutan bisa dilakukan pada multi kolom, perlu ada tambahan argumen lagi yaitu <em>sort_mode=’multi’</em>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import dash_table
+from dash import html
+import pandas as pd
+
+app = dash.Dash(__name__)
+
+df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
+
+app.layout = html.Div([
+				html.Div([
+					# Div untuk judul
+					html.H2("Tabel Dengan  Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk table
+					dash_table.DataTable(
+						data = df.to_dict('records'), 
+						columns=[ {'name': i, 'id': i} for i in df.columns],
+						sort_action='native',
+						sort_mode='multi',
+					)
+				]),
+			])
+
+if __name__ == "__main__":
+	app.run_server()
+
+</code></pre></div></div>
+
+<p>Dengan menambahkan fitur <em>sort_mode=’multi’</em> memungkinkan tabel dapat diurutkan berdasarkan 2 atau lebih kolom.</p>
+
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
+
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>sortable_table.py</em>) lalu kita jalankan dengan perintah.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python sortable_table.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+</code></pre></div></div>
+
+<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
                 
 			</article>
 			
 			<!-- Tags -->
 			<div class="mb-4">
 				<span class="taglist">
-				
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="/tags.html#sticky">sticky</a>
 				
 				</span>
 			</div>
@@ -433,9 +534,13 @@ function lunr_search(term) {
     <div class="container">
         <div class="row prevnextlinks small font-weight-bold">
           
+            <div class="col-md-6 rightborder pl-0">
+                <a class="text-dark" href="/dash-simple-bar-chart/"> <img height="30px" class="mr-1" src="/https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg">  Membuat Bar Chart dengan Dash Plotly.</a>
+            </div>
+          
           
             <div class="col-md-6 text-right pr-0">
-                <a class="text-dark" href="/arus-teknologi-desa/"> Arus Teknologi Informasi di Desa  <img height="30px" class="ml-1" src="/assets/images/3.jpg"> </a>
+                <a class="text-dark" href="/dash-filterable-table/"> Mem-filter nilai dalam sebuah kolom pada Dash Data Table  <img height="30px" class="ml-1" src="/https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg"> </a>
             </div>
           
         </div>

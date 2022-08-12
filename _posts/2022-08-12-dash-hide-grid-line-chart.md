@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Menyembunyikan grid Line Chart"
+title:  "Menyembunyikan Grid pada Line Chart"
 author: faris
 categories: [ dash, plotly, line chart, tutorial ]
 image: assets/images/2.jpg

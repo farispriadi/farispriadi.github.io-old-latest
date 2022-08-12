@@ -3,48 +3,97 @@ layout: post
 title:  "Menyembunyikan grid Bar Chart"
 author: faris
 categories: [ dash, plotly, bar chart, tutorial ]
-image: assets/images/4.jpg
-tags: [featured]
+image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg
 ---
-There are lots of powerful things you can do with the Markdown editor
-
-If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
-
-As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using.
+Secara default untuk membuat Bar Chart pada Dash Plotly grid pada tampilan grafik akan muncul. Pada post kali ini akan kita sembunyikan grid pada Bar Chart.
 
 
-## Special formatting
+## Membuat Bar Chart
 
-As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:
+Kita akan membuat Bar Chart menggunakan kode dari [Membuat Bar Chart dengan Dash Plotly](https://farispriadi.github.io/dash-simple-bar-chart/).
 
-+ ~~strike through~~
-+ ==highlight==
-+ \*escaped characters\*
-
-
-## Writing code blocks
-
-There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, `like this`. Larger snippets of code can be displayed across multiple lines using triple back ticks:
 
 ```
-.my-link {
-    text-decoration: underline;
-}
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+						)
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+
 ```
 
-If you want to get really fancy, you can even add syntax highlighting using Rouge.
+## Menghilangkan Grid
+Grid pada bar chart hanya muncul pada subu y saja, sehingga cukup menyembunyikan garis yang muncul dari yaxis. Dengan membuat objek dari*go.Layout* dan diisi dengan dictionary dengan *key* *yaxis: {'showgrid': False}*. Sehingga kode akan menjadi sebagai berikut.
+
+```
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38]),
+							go.Layout(yaxis={'showgrid': False})
+						)
 
 
-![walking]({{ site.baseurl }}/assets/images/3.jpg)
+					)
+				]),
+			])
 
-## Reference lists
+if __name__ == '__main__':
+	app.run_server()
+```
+## Menjalankan Kode
 
-The quick brown jumped over the lazy.
+Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file *no_grid_bar_chart.py*) lalu kita jalankan dengan perintah.
 
-Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.
+```
+$ python no_grid_bar_chart.py
+Dash is running on http://127.0.0.1:8050/
 
-## Full HTML
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+```
 
-Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:
 
-<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+Anda bisa buka browser dan arahkan ke url *http://127.0.0.1:8050*.
+![Tampilan]({{ site.baseurl }}/assets/images/hide_grid_bar_chart.png)

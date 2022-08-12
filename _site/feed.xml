@@ -1,12 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-12T19:50:21+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>opini dan log seorang programmer.</subtitle><entry><title type="html">Menyembunyikan Grid pada Line Chart</title><link href="http://localhost:4000/dash-hide-grid-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan Grid pada Line Chart" /><published>2022-08-12T00:00:00+07:00</published><updated>2022-08-12T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-grid-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-grid-line-chart/"><![CDATA[<p><code class="language-plaintext highlighter-rouge">gem install bundler</code> installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-12T22:23:14+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>opini dan log seorang programmer.</subtitle><entry><title type="html">Menyembunyikan Grid pada Line Chart</title><link href="http://localhost:4000/dash-hide-grid-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan Grid pada Line Chart" /><published>2022-08-12T00:00:00+07:00</published><updated>2022-08-12T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-grid-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-grid-line-chart/"><![CDATA[<p>Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.</p>
 
-<p><code class="language-plaintext highlighter-rouge">bundler</code> is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires.</p>
+<h2 id="membuat-line-chart">Membuat Line Chart</h2>
 
-<p>The <code class="language-plaintext highlighter-rouge">Gemfile</code> and <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> files inform <code class="language-plaintext highlighter-rouge">Bundler</code> about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit <code class="language-plaintext highlighter-rouge">bundle exec</code> and just <code class="language-plaintext highlighter-rouge">run jekyll serve</code>.</p>
+<p>Kita akan membuat Line Chart menggunakan kode dari <a href="https://farispriadi.github.io/dash-simple-line-chart/">Membuat Line Chart dengan Dash Plotl</a>.</p>
 
-<p>When you run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>, <code class="language-plaintext highlighter-rouge">Bundler</code> uses the gems and versions as specified in <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> to ensure your Jekyll site builds with no compatibility or dependency conflicts.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
 
-<p>For more information about how to use <code class="language-plaintext highlighter-rouge">Bundler</code> in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[gem install bundler installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/2.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/2.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Membuat cell pada Dash Data Table dapat diedit</title><link href="http://localhost:4000/dash-editable-table/" rel="alternate" type="text/html" title="Membuat cell pada Dash Data Table dapat diedit" /><published>2022-08-11T00:00:00+07:00</published><updated>2022-08-11T00:00:00+07:00</updated><id>http://localhost:4000/dash-editable-table</id><content type="html" xml:base="http://localhost:4000/dash-editable-table/"><![CDATA[<p>Tabel biasanya digunakan untuk menampilkan data yang mempunyai baris dan kolom. Tabel juga terkadang dibuat tidak hanya untuk menampilkan data namun untuk mengisi data. Kali ini kita akan membuat tabel yang nilainya dapat Anda ubah atau dapat diupdate.</p>
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph( figure =
+						{
+							'data' : [{
+								'x' : [1,2,3,4,5,6,7,8,9],
+								'y' : [1,4,9,16,25,36,49,64,81],
+								'mode': 'lines',
+
+							}],
+							'layout' : {
+								'title' : 'Pangkat Kuadrat',
+							}
+						}
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+</code></pre></div></div>
+
+<h2 id="menghilangkan-grid">Menghilangkan Grid</h2>
+<p>Untuk menghilangkan grid atau garis yang melintang baik dari sumbu x maupun y cukup dengan menambahkan <em>key</em> <em>xaxis: {‘showgrid’: False}</em> dan <em>yaxis: {‘showgrid’: False}</em> pada dictionar layout. Sehingga kode akan menjadi sebagai berikut.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph( figure =
+						{
+							'data' : [{
+								'x' : [1,2,3,4,5,6,7,8,9],
+								'y' : [1,4,9,16,25,36,49,64,81],
+								'mode': 'lines',
+
+							}],
+							'layout' : {
+								'title' : 'Pangkat Kuadrat',
+								'xaxis' : {'showgrid': False},
+								'yaxis' : {'showgrid': False}
+							}
+						}
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+</code></pre></div></div>
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
+
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>no_grid_line_chart.py</em>) lalu kita jalankan dengan perintah.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python no_grid_line_chart.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+</code></pre></div></div>
+
+<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.
+<img src="/assets/images/hide_grid_line_chart.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Membuat cell pada Dash Data Table dapat diedit</title><link href="http://localhost:4000/dash-editable-table/" rel="alternate" type="text/html" title="Membuat cell pada Dash Data Table dapat diedit" /><published>2022-08-11T00:00:00+07:00</published><updated>2022-08-11T00:00:00+07:00</updated><id>http://localhost:4000/dash-editable-table</id><content type="html" xml:base="http://localhost:4000/dash-editable-table/"><![CDATA[<p>Tabel biasanya digunakan untuk menampilkan data yang mempunyai baris dan kolom. Tabel juga terkadang dibuat tidak hanya untuk menampilkan data namun untuk mengisi data. Kali ini kita akan membuat tabel yang nilainya dapat Anda ubah atau dapat diupdate.</p>
 
 <h2 id="membuat-table">Membuat Table</h2>
 

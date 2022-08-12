@@ -12,19 +12,19 @@
 <meta property="og:title" content="Menyembunyikan Grid pada Line Chart" />
 <meta name="author" content="faris" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="gem install bundler installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:" />
-<meta property="og:description" content="gem install bundler installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:" />
+<meta name="description" content="Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya." />
+<meta property="og:description" content="Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya." />
 <link rel="canonical" href="http://localhost:4000/dash-hide-grid-line-chart/" />
 <meta property="og:url" content="http://localhost:4000/dash-hide-grid-line-chart/" />
 <meta property="og:site_name" content="Programmer Biasa" />
-<meta property="og:image" content="http://localhost:4000/assets/images/2.jpg" />
+<meta property="og:image" content="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-08-12T00:00:00+07:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4000/assets/images/2.jpg" />
+<meta property="twitter:image" content="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" />
 <meta property="twitter:title" content="Menyembunyikan Grid pada Line Chart" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dash-hide-grid-line-chart/"},"url":"http://localhost:4000/dash-hide-grid-line-chart/","image":"http://localhost:4000/assets/images/2.jpg","author":{"@type":"Person","name":"faris"},"headline":"Menyembunyikan Grid pada Line Chart","dateModified":"2022-08-12T00:00:00+07:00","datePublished":"2022-08-12T00:00:00+07:00","description":"gem install bundler installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"faris"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/dash-hide-grid-line-chart/"},"url":"http://localhost:4000/dash-hide-grid-line-chart/","image":"https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg","author":{"@type":"Person","name":"faris"},"headline":"Menyembunyikan Grid pada Line Chart","dateModified":"2022-08-12T00:00:00+07:00","datePublished":"2022-08-12T00:00:00+07:00","description":"Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"faris"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -169,7 +169,7 @@ var documents = [{
     "id": 14,
     "url": "http://localhost:4000/dash-hide-grid-line-chart/",
     "title": "Menyembunyikan Grid pada Line Chart",
-    "body": "2022/08/12 - gem install bundler installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details: bundler is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires. The Gemfile and Gemfile. lock files inform Bundler about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit bundle exec and just run jekyll serve. When you run bundle exec jekyll serve, Bundler uses the gems and versions as specified in Gemfile. lock to ensure your Jekyll site builds with no compatibility or dependency conflicts. For more information about how to use Bundler in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly. "
+    "body": "2022/08/12 - Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya. Membuat Line Chart: Kita akan membuat Line Chart menggunakan kode dari Membuat Line Chart dengan Dash Plotl. import dashfrom dash import htmlfrom dash import dccapp = dash. Dash(__name__)app. layout = html. Div([				# Div utama				html. Div([					# Div untuk Judul					html. H2( Line Chart Sederhana dengan Dash Plotly )				]),				html. Div([					# Div untuk Line Chart					dcc. Graph( figure =						{							'data' : [{								'x' : [1,2,3,4,5,6,7,8,9],								'y' : [1,4,9,16,25,36,49,64,81],								'mode': 'lines',							}],							'layout' : {								'title' : 'Pangkat Kuadrat',							}						}					)				]),			])if __name__ == '__main__':	app. run_server()Menghilangkan Grid: Untuk menghilangkan grid atau garis yang melintang baik dari sumbu x maupun y cukup dengan menambahkan key xaxis: {‘showgrid’: False} dan yaxis: {‘showgrid’: False} pada dictionar layout. Sehingga kode akan menjadi sebagai berikut. import dashfrom dash import htmlfrom dash import dccapp = dash. Dash(__name__)app. layout = html. Div([				# Div utama				html. Div([					# Div untuk Judul					html. H2( Line Chart Sederhana dengan Dash Plotly )				]),				html. Div([					# Div untuk Line Chart					dcc. Graph( figure =						{							'data' : [{								'x' : [1,2,3,4,5,6,7,8,9],								'y' : [1,4,9,16,25,36,49,64,81],								'mode': 'lines',							}],							'layout' : {								'title' : 'Pangkat Kuadrat',								'xaxis' : {'showgrid': False},								'yaxis' : {'showgrid': False}							}						}					)				]),			])if __name__ == '__main__':	app. run_server()Menjalankan Kode: Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file no_grid_line_chart. py) lalu kita jalankan dengan perintah. $ python no_grid_line_chart. pyDash is running on http://127. 0. 0. 1:8050/ * Serving Flask app 'test' (lazy loading) * Environment: production  WARNING: This is a development server. Do not use it in a production deployment.  Use a production WSGI server instead. * Debug mode: off * Running on http://127. 0. 0. 1:8050 (Press CTRL+C to quit)Anda bisa buka browser dan arahkan ke url http://127. 0. 0. 1:8050. "
     }, {
     "id": 15,
     "url": "http://localhost:4000/dash-editable-table/",
@@ -314,7 +314,7 @@ function lunr_search(term) {
 				</div>
                 
 				<div class="col-md-6 pr-0 align-self-center">
-					<img class="rounded" src="/assets/images/2.jpg" alt="Menyembunyikan Grid pada Line Chart">
+					<img class="rounded" src="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" alt="Menyembunyikan Grid pada Line Chart">
 				</div>
                 
 			</div>
@@ -354,15 +354,106 @@ function lunr_search(term) {
             
             <!-- Article -->
 			<article class="article-post">                
-			<p><code class="language-plaintext highlighter-rouge">gem install bundler</code> installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:</p>
+			<p>Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.</p>
 
-<p><code class="language-plaintext highlighter-rouge">bundler</code> is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires.</p>
+<h2 id="membuat-line-chart">Membuat Line Chart</h2>
 
-<p>The <code class="language-plaintext highlighter-rouge">Gemfile</code> and <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> files inform <code class="language-plaintext highlighter-rouge">Bundler</code> about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit <code class="language-plaintext highlighter-rouge">bundle exec</code> and just <code class="language-plaintext highlighter-rouge">run jekyll serve</code>.</p>
+<p>Kita akan membuat Line Chart menggunakan kode dari <a href="https://farispriadi.github.io/dash-simple-line-chart/">Membuat Line Chart dengan Dash Plotl</a>.</p>
 
-<p>When you run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>, <code class="language-plaintext highlighter-rouge">Bundler</code> uses the gems and versions as specified in <code class="language-plaintext highlighter-rouge">Gemfile.lock</code> to ensure your Jekyll site builds with no compatibility or dependency conflicts.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
 
-<p>For more information about how to use <code class="language-plaintext highlighter-rouge">Bundler</code> in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly.</p>
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph( figure =
+						{
+							'data' : [{
+								'x' : [1,2,3,4,5,6,7,8,9],
+								'y' : [1,4,9,16,25,36,49,64,81],
+								'mode': 'lines',
+
+							}],
+							'layout' : {
+								'title' : 'Pangkat Kuadrat',
+							}
+						}
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+</code></pre></div></div>
+
+<h2 id="menghilangkan-grid">Menghilangkan Grid</h2>
+<p>Untuk menghilangkan grid atau garis yang melintang baik dari sumbu x maupun y cukup dengan menambahkan <em>key</em> <em>xaxis: {‘showgrid’: False}</em> dan <em>yaxis: {‘showgrid’: False}</em> pada dictionar layout. Sehingga kode akan menjadi sebagai berikut.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph( figure =
+						{
+							'data' : [{
+								'x' : [1,2,3,4,5,6,7,8,9],
+								'y' : [1,4,9,16,25,36,49,64,81],
+								'mode': 'lines',
+
+							}],
+							'layout' : {
+								'title' : 'Pangkat Kuadrat',
+								'xaxis' : {'showgrid': False},
+								'yaxis' : {'showgrid': False}
+							}
+						}
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+</code></pre></div></div>
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
+
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>no_grid_line_chart.py</em>) lalu kita jalankan dengan perintah.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python no_grid_line_chart.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+</code></pre></div></div>
+
+<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.
+<img src="/assets/images/hide_grid_line_chart.png" alt="Tampilan" /></p>
                 
 			</article>
 			

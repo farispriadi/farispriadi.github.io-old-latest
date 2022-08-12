@@ -3,14 +3,111 @@ layout: post
 title:  "Menyembunyikan Grid pada Line Chart"
 author: faris
 categories: [ dash, plotly, line chart, tutorial ]
-image: assets/images/2.jpg
+image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg
 ---
-`gem install bundler` installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:
+Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.
 
-`bundler` is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires.
 
-The `Gemfile` and `Gemfile.lock` files inform `Bundler` about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit `bundle exec` and just `run jekyll serve`.
+## Membuat Line Chart
 
-When you run `bundle exec jekyll serve`, `Bundler` uses the gems and versions as specified in `Gemfile.lock` to ensure your Jekyll site builds with no compatibility or dependency conflicts.
+Kita akan membuat Line Chart menggunakan kode dari [Membuat Line Chart dengan Dash Plotl](https://farispriadi.github.io/dash-simple-line-chart/).
 
-For more information about how to use `Bundler` in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly.
+
+```
+import dash
+from dash import html
+from dash import dcc
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph( figure =
+						{
+							'data' : [{
+								'x' : [1,2,3,4,5,6,7,8,9],
+								'y' : [1,4,9,16,25,36,49,64,81],
+								'mode': 'lines',
+
+							}],
+							'layout' : {
+								'title' : 'Pangkat Kuadrat',
+							}
+						}
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+```
+
+## Menghilangkan Grid
+Untuk menghilangkan grid atau garis yang melintang baik dari sumbu x maupun y cukup dengan menambahkan *key* *xaxis: {'showgrid': False}* dan *yaxis: {'showgrid': False}* pada dictionar layout. Sehingga kode akan menjadi sebagai berikut.
+
+```
+import dash
+from dash import html
+from dash import dcc
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph( figure =
+						{
+							'data' : [{
+								'x' : [1,2,3,4,5,6,7,8,9],
+								'y' : [1,4,9,16,25,36,49,64,81],
+								'mode': 'lines',
+
+							}],
+							'layout' : {
+								'title' : 'Pangkat Kuadrat',
+								'xaxis' : {'showgrid': False},
+								'yaxis' : {'showgrid': False}
+							}
+						}
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+```
+## Menjalankan Kode
+
+Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file *no_grid_line_chart.py*) lalu kita jalankan dengan perintah.
+
+```
+$ python no_grid_line_chart.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+```
+
+
+Anda bisa buka browser dan arahkan ke url *http://127.0.0.1:8050*.
+![Tampilan]({{ site.baseurl }}/assets/images/hide_grid_line_chart.png)

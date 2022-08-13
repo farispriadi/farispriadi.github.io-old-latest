@@ -5,7 +5,7 @@ author: faris
 categories: [ dash, plotly, line chart, tutorial ]
 image: https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg
 ---
-Dalam sebuah grafik garis atau Line Chart kita biasanya memerlukan tambahan text diatas koordinat nilai dari x dan y untuk memudahkan membaca nilai pada titik tersebut. Penambahan text label pada Line Chart akan kita bahas pada post kali ini.
+Dalam sebuah grafik garis atau Line Chart kita biasanya memerlukan tambahan text di atas koordinat nilai dari x dan y untuk memudahkan membaca nilai pada titik tersebut. Penambahan text label pada Line Chart akan kita bahas pada post kali ini.
 
 ## Import Modul
 
@@ -43,6 +43,7 @@ app.layout = html.Div([
 								mode='lines+markers+text',
 								text=['1^2','2^2','3^2','4^2'],
 								textposition = 'top right',
+								textfont=dict(size=16)
 							),
 							go.Layout(
 								xaxis={'showgrid':False},

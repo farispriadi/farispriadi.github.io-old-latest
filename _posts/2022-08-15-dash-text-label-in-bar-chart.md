@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Menambahkan Text pada Bar Chart dengan Dash Plotly."
+title:  "Menambahkan Text Label pada Bar Chart dengan Dash Plotly."
 author: faris
 categories: [ dash, plotly, bar chart, tutorial ]
 image: assets/images/3.jpg

@@ -10,7 +10,7 @@ Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk 
 
 ## Membuat Line Chart
 
-Kita akan membuat Line Chart menggunakan kode dari [Membuat Line Chart dengan Dash Plotl](https://farispriadi.github.io/dash-simple-line-chart/).
+Kita akan membuat Line Chart menggunakan kode dari [Membuat Line Chart dengan Dash Plotly](https://farispriadi.github.io/dash-simple-line-chart/).
 
 
 ```

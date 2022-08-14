@@ -3,7 +3,7 @@ layout: post
 title:  "Menyembunyikan grid Bar Chart"
 author: faris
 categories: [ dash, plotly, bar chart, tutorial ]
-image: https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg
+image: https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg
 ---
 Secara default untuk membuat Bar Chart pada Dash Plotly grid pada tampilan grafik akan muncul. Pada post kali ini akan kita sembunyikan grid pada Bar Chart.
 

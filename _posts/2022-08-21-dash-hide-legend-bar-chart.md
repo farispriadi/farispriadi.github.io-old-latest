@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Menyembunyikan legend pada Line Chart"
+title:  "Menyembunyikan legend pada Bar Chart"
 author: faris
-categories: [ dash, plotly, line chart, tutorial ]
+categories: [ dash, plotly, bar chart, tutorial ]
 image: assets/images/6.jpg
 tags: featured
 ---

@@ -31,11 +31,13 @@ app.layout = html.Div([
 					# Div untuk Bar Chart
 					dcc.Graph( figure =
 						go.Figure(
-							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38],
+							text=[27,35,38],
+							textposition = 'inside',
+							textfont=dict(size=16)
+							),
+						go.Layout(yaxis={'showgrid': False})
 						),
-						go.Layout(yaxis={'showgrid': False, 'visible': False,'showticklabels': False})
-
-
 					)
 				]),
 			])
@@ -46,8 +48,8 @@ if __name__ == '__main__':
 
 ```
 
-## Menghilangkan Grid
-Grid pada bar chart hanya muncul pada subu y saja, sehingga cukup menyembunyikan garis yang muncul dari yaxis. Dengan membuat objek dari*go.Layout* dan diisi dengan dictionary dengan *key* *yaxis: {'showgrid': False}*. Sehingga kode akan menjadi sebagai berikut.
+## Menghilangkan Sumbu Y
+
 
 ```
 import dash
@@ -61,27 +63,34 @@ app.layout = html.Div([
 				# Div utama
 				html.Div([
 					# Div untuk Judul
-					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+					html.H2("Menyembunyikan Y Axis Pada Bar Chart")
 				]),
 				html.Div([
 					# Div untuk Bar Chart
 					dcc.Graph( figure =
 						go.Figure(
-							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+							go.Bar(
+								x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38],
+								text=[27,35,38],
+								textposition = 'inside',
+								textfont=dict(size=16)
+							),
+						go.Layout(yaxis={'showgrid': False, 'visible': False,'showticklabels': False})	
 						),
-						go.Layout(yaxis={'showgrid': False, 'visible': False,'showticklabels': False})
-
-
 					)
 				]),
 			])
 
 if __name__ == '__main__':
 	app.run_server()
+
 ```
+
+Untuk menyembunyikan sumbu y pada parameter *yaxis* ditambahkan key 'visible' dan 'showticklabels' yang keduanya bernilai False. Jika diperlukan untuk menyembunyikan sumbu x, kita juga bisa melakukann hal yang sama pada parameter *xaxis*.
+
 ## Menjalankan Kode
 
-Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file *no_grid_bar_chart.py*) lalu kita jalankan dengan perintah.
+Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file *bar_chart_hide_axis.py*) lalu kita jalankan dengan perintah.
 
 ```
 $ python no_grid_bar_chart.py
@@ -97,4 +106,4 @@ Dash is running on http://127.0.0.1:8050/
 
 
 Anda bisa buka browser dan arahkan ke url *http://127.0.0.1:8050*.
-![Tampilan]({{ site.baseurl }}/assets/images/hide_grid_bar_chart.png)
+![Tampilan]({{ site.baseurl }}/assets/images/bar_chart_hide_axis.png)

@@ -1,19 +1,100 @@
 ---
 layout: post
-title:  "Menyembunyikan x axis dan y axis pada Bar Chart"
+title:  "Menyembunyikan x axis atau y axis pada Bar Chart"
 author: faris
 categories: [ dash, plotly, bar chart, tutorial ]
-image: assets/images/11.jpg
+image: https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg
 ---
+Kali ini kita akan coba mengimplementasikan Text Label dan menghilangkan sumbu Y.
 
-No more databases, comment moderation, or pesky updates to install-just your content. Markdown, Liquid, HTML & CSS go in. Static sites come out ready for deployment. Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.
 
-Sick of dealing with hosting companies? GitHub Pages are powered by Jekyll, so you can easily deploy your site using GitHub for free-custom domain name and all.
+## Membuat Bar Chart
 
-## What is Jekyll?
+Kita akan membuat Bar Chart menggunakan kode dari [Membuat Bar Chart dengan Dash Plotly](https://farispriadi.github.io/dash-simple-bar-chart/).
 
-Jekyll is a simple, blog-aware, static site generator.
 
-You create your content as text files (Markdown), and organize them into folders. Then, you build the shell of your site using Liquid-enhanced HTML templates. Jekyll automatically stitches the content and templates together, generating a website made entirely of static assets, suitable for uploading to any server.
+```
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
 
-Jekyll happens to be the engine behind GitHub Pages, so you can host your project’s Jekyll page/blog/website on GitHub’s servers for free.
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+						),
+						go.Layout(yaxis={'showgrid': False, 'visible': False,'showticklabels': False})
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+
+```
+
+## Menghilangkan Grid
+Grid pada bar chart hanya muncul pada subu y saja, sehingga cukup menyembunyikan garis yang muncul dari yaxis. Dengan membuat objek dari*go.Layout* dan diisi dengan dictionary dengan *key* *yaxis: {'showgrid': False}*. Sehingga kode akan menjadi sebagai berikut.
+
+```
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+						),
+						go.Layout(yaxis={'showgrid': False, 'visible': False,'showticklabels': False})
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+```
+## Menjalankan Kode
+
+Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file *no_grid_bar_chart.py*) lalu kita jalankan dengan perintah.
+
+```
+$ python no_grid_bar_chart.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+```
+
+
+Anda bisa buka browser dan arahkan ke url *http://127.0.0.1:8050*.
+![Tampilan]({{ site.baseurl }}/assets/images/hide_grid_bar_chart.png)

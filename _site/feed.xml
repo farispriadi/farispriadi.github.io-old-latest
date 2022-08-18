@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-19T00:48:23+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>opini dan log seorang programmer.</subtitle><entry><title type="html">Menyembunyikan legend pada Bar Chart</title><link href="http://localhost:4000/dash-hide-legend-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan legend pada Bar Chart" /><published>2022-08-19T00:00:00+07:00</published><updated>2022-08-19T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-legend-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-legend-bar-chart/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated. Something.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-19T01:09:34+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>opini dan log seorang programmer.</subtitle><entry><title type="html">Menyembunyikan legend pada Bar Chart</title><link href="http://localhost:4000/dash-hide-legend-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan legend pada Bar Chart" /><published>2022-08-19T00:00:00+07:00</published><updated>2022-08-19T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-legend-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-legend-bar-chart/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated. Something.</p>
 
 <p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
 
@@ -22,17 +22,93 @@
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/6.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan x axis dan y axis pada Bar Chart</title><link href="http://localhost:4000/dash-hide-axis-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan x axis dan y axis pada Bar Chart" /><published>2022-08-17T00:00:00+07:00</published><updated>2022-08-17T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-axis-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-axis-bar-chart/"><![CDATA[<p>No more databases, comment moderation, or pesky updates to install-just your content. Markdown, Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment. Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.</p>
+<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/6.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan x axis atau y axis pada Bar Chart</title><link href="http://localhost:4000/dash-hide-axis-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan x axis atau y axis pada Bar Chart" /><published>2022-08-17T00:00:00+07:00</published><updated>2022-08-17T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-axis-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-axis-bar-chart/"><![CDATA[<p>Kali ini kita akan coba mengimplementasikan Text Label dan menghilangkan sumbu Y.</p>
 
-<p>Sick of dealing with hosting companies? GitHub Pages are powered by Jekyll, so you can easily deploy your site using GitHub for free-custom domain name and all.</p>
+<h2 id="membuat-bar-chart">Membuat Bar Chart</h2>
 
-<h2 id="what-is-jekyll">What is Jekyll?</h2>
+<p>Kita akan membuat Bar Chart menggunakan kode dari <a href="https://farispriadi.github.io/dash-simple-bar-chart/">Membuat Bar Chart dengan Dash Plotly</a>.</p>
 
-<p>Jekyll is a simple, blog-aware, static site generator.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
 
-<p>You create your content as text files (Markdown), and organize them into folders. Then, you build the shell of your site using Liquid-enhanced HTML templates. Jekyll automatically stitches the content and templates together, generating a website made entirely of static assets, suitable for uploading to any server.</p>
+app = dash.Dash(__name__)
 
-<p>Jekyll happens to be the engine behind GitHub Pages, so you can host your project’s Jekyll page/blog/website on GitHub’s servers for free.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><summary type="html"><![CDATA[No more databases, comment moderation, or pesky updates to install-just your content. Markdown, Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment. Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/11.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/11.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan x axis atau y axis pada Line Chart</title><link href="http://localhost:4000/dash-hide-axis-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan x axis atau y axis pada Line Chart" /><published>2022-08-16T00:00:00+07:00</published><updated>2022-08-16T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-axis-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-axis-line-chart/"><![CDATA[<p>Pada post kali ini kita akan mencoba menghilangkan garis y axis dan menggantinya dengan memberikan text label.</p>
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+						),
+						go.Layout(yaxis={'showgrid': False, 'visible': False,'showticklabels': False})
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+
+</code></pre></div></div>
+
+<h2 id="menghilangkan-grid">Menghilangkan Grid</h2>
+<p>Grid pada bar chart hanya muncul pada subu y saja, sehingga cukup menyembunyikan garis yang muncul dari yaxis. Dengan membuat objek dari<em>go.Layout</em> dan diisi dengan dictionary dengan <em>key</em> <em>yaxis: {‘showgrid’: False}</em>. Sehingga kode akan menjadi sebagai berikut.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+						),
+						go.Layout(yaxis={'showgrid': False, 'visible': False,'showticklabels': False})
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+</code></pre></div></div>
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
+
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>no_grid_bar_chart.py</em>) lalu kita jalankan dengan perintah.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python no_grid_bar_chart.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+</code></pre></div></div>
+
+<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.
+<img src="/assets/images/hide_grid_bar_chart.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><summary type="html"><![CDATA[Kali ini kita akan coba mengimplementasikan Text Label dan menghilangkan sumbu Y.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan x axis atau y axis pada Line Chart</title><link href="http://localhost:4000/dash-hide-axis-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan x axis atau y axis pada Line Chart" /><published>2022-08-16T00:00:00+07:00</published><updated>2022-08-16T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-axis-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-axis-line-chart/"><![CDATA[<p>Pada post kali ini kita akan mencoba menghilangkan garis y axis dan menggantinya dengan memberikan text label.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
 from dash import html
@@ -135,7 +211,7 @@ Dash is running on http://127.0.0.1:8050/
 
 <p><img src="/assets/images/line_chart_hide_axis.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Pada post kali ini kita akan mencoba menghilangkan garis y axis dan menggantinya dengan memberikan text label.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menambahkan Text Label pada Bar Chart dengan Dash Plotly.</title><link href="http://localhost:4000/dash-text-label-in-bar-chart/" rel="alternate" type="text/html" title="Menambahkan Text Label pada Bar Chart dengan Dash Plotly." /><published>2022-08-15T00:00:00+07:00</published><updated>2022-08-15T00:00:00+07:00</updated><id>http://localhost:4000/dash-text-label-in-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-text-label-in-bar-chart/"><![CDATA[<p>Memberikan Text Label pada Bar Chart memudahkan pengguna untuk melihat nilai pada sumbu y tanpa harus menurutkannya ke sumbu y sendiri, artinya dapat mengurangi energi yang dikeluarkan oleh pengguna dalam melihat sebuah grafik. Pada post kali ini kita akan membahas mengenai panambahan Text Label pada Bar Chart.</p>
 
-<h2 id="import-modul">Import Modul</h2>
+<h2 id="membuat-bar-chart">Membuat Bar Chart</h2>
 
 <p>Kita akan menggunakan contoh pada post <a href="https://farispriadi.github.io/dash-hide-grid-bar-chart/">Menyembunyikan grid Bar Chart</a>.</p>
 
@@ -159,8 +235,7 @@ app.layout = html.Div([
 							go.Bar(
 								x=['Jawa Barat','Jawa Tengah','Jawa Timur'], 
 								y=[27,35,38],
-							),
-							go.Layout(yaxis={'showgrid': False})
+							)
 						)
 
 
@@ -173,11 +248,7 @@ if __name__ == '__main__':
 
 </code></pre></div></div>
 
-<p><em>html.Div</em> merupakan komponen html dalam Dash Plotly yang fungsinya sama dengan <em>div</em> pada HTML yaitu digunakan sebagai kontainer elemen HTML yang lain. <em>html.H2</em> kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek <em>Graph</em> yang berada pada modul <em>dcc</em>. Pada kode di atas kita akan membuat bar chart dengan menggunakan objek dari <em>Bar chart</em> . <em>figure</em> pada kelas Graph diisi dengan objek Figure dari <em>graph_objects</em>, dan argumen untuk kontruktor dari <em>go.Figure</em> diisi dengan <em>go.Bar</em>. Argumen <em>text</em> berisi <em>list</em> dari text label yang akan ditampilkan. Nilai <em>x</em> dan <em>y</em> axis disi dengan sebuah list yang mempunyai panjang yang sama. Pada kode di atas akan muncul Bar Chart yang memiliki text label berupa keterangan jumlah kota dan kabupaten dalam satu provinsi.</p>
-
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Kode secara utuh akan tampil sebagai berikut.</p>
+<h2 id="menulis-kode">Menulis Kode</h2>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
 from dash import html
@@ -190,7 +261,7 @@ app.layout = html.Div([
 				# Div utama
 				html.Div([
 					# Div untuk Judul
-					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+					html.H2("Bar Chart dengan Text Label")
 				]),
 				html.Div([
 					# Div untuk Bar Chart
@@ -200,7 +271,7 @@ app.layout = html.Div([
 								x=['Jawa Barat','Jawa Tengah','Jawa Timur'], 
 								y=[27,35,38],
 								text=[27,35,38],
-								textposition = 'top right',
+								textposition = 'inside',
 								textfont=dict(size=16)
 							),
 							go.Layout(yaxis={'showgrid': False})
@@ -214,8 +285,11 @@ app.layout = html.Div([
 if __name__ == '__main__':
 	app.run_server()
 
-
 </code></pre></div></div>
+
+<p>Parameter <em>text</em> ditambahkan untuk menampilkan text label. Parameter <em>textposition</em> digunakan untuk menentukan posisi text label pada diagram batang, dan <em>textfont</em> berisi <em>dict</em> untuk konfigurasi font dengan yang berukuran 16 pixel.</p>
+
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
 
 <p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>bar_chart_with_text_label.py</em>) lalu kita jalankan dengan perintah.</p>
 

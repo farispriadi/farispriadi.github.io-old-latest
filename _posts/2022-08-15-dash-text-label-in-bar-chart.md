@@ -7,7 +7,7 @@ image: https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg
 ---
 Memberikan Text Label pada Bar Chart memudahkan pengguna untuk melihat nilai pada sumbu y tanpa harus menurutkannya ke sumbu y sendiri, artinya dapat mengurangi energi yang dikeluarkan oleh pengguna dalam melihat sebuah grafik. Pada post kali ini kita akan membahas mengenai panambahan Text Label pada Bar Chart.
 
-## Import Modul
+## Membuat Bar Chart
 
 Kita akan menggunakan contoh pada post [Menyembunyikan grid Bar Chart](https://farispriadi.github.io/dash-hide-grid-bar-chart/).
 
@@ -32,8 +32,7 @@ app.layout = html.Div([
 							go.Bar(
 								x=['Jawa Barat','Jawa Tengah','Jawa Timur'], 
 								y=[27,35,38],
-							),
-							go.Layout(yaxis={'showgrid': False})
+							)
 						)
 
 
@@ -46,11 +45,7 @@ if __name__ == '__main__':
 
 ```
 
-*html.Div* merupakan komponen html dalam Dash Plotly yang fungsinya sama dengan *div* pada HTML yaitu digunakan sebagai kontainer elemen HTML yang lain. *html.H2* kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek *Graph* yang berada pada modul *dcc*. Pada kode di atas kita akan membuat bar chart dengan menggunakan objek dari *Bar chart* . *figure* pada kelas Graph diisi dengan objek Figure dari *graph_objects*, dan argumen untuk kontruktor dari *go.Figure* diisi dengan *go.Bar*. Argumen *text* berisi *list* dari text label yang akan ditampilkan. Nilai *x* dan *y* axis disi dengan sebuah list yang mempunyai panjang yang sama. Pada kode di atas akan muncul Bar Chart yang memiliki text label berupa keterangan jumlah kota dan kabupaten dalam satu provinsi.
-
-## Menjalankan Kode
-
-Kode secara utuh akan tampil sebagai berikut.
+## Menulis Kode 
 
 ```
 import dash
@@ -64,7 +59,7 @@ app.layout = html.Div([
 				# Div utama
 				html.Div([
 					# Div untuk Judul
-					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+					html.H2("Bar Chart dengan Text Label")
 				]),
 				html.Div([
 					# Div untuk Bar Chart
@@ -74,7 +69,7 @@ app.layout = html.Div([
 								x=['Jawa Barat','Jawa Tengah','Jawa Timur'], 
 								y=[27,35,38],
 								text=[27,35,38],
-								textposition = 'top right',
+								textposition = 'inside',
 								textfont=dict(size=16)
 							),
 							go.Layout(yaxis={'showgrid': False})
@@ -88,8 +83,12 @@ app.layout = html.Div([
 if __name__ == '__main__':
 	app.run_server()
 
-
 ```
+
+Parameter *text* ditambahkan untuk menampilkan text label. Parameter *textposition* digunakan untuk menentukan posisi text label pada diagram batang, dan *textfont* berisi *dict* untuk konfigurasi font dengan yang berukuran 16 pixel.  
+
+## Menjalankan Kode
+
 
 
 Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file *bar_chart_with_text_label.py*) lalu kita jalankan dengan perintah.

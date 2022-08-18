@@ -1,8 +1,437 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-12T22:23:14+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>opini dan log seorang programmer.</subtitle><entry><title type="html">Menyembunyikan Grid pada Line Chart</title><link href="http://localhost:4000/dash-hide-grid-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan Grid pada Line Chart" /><published>2022-08-12T00:00:00+07:00</published><updated>2022-08-12T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-grid-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-grid-line-chart/"><![CDATA[<p>Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-19T00:48:23+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>opini dan log seorang programmer.</subtitle><entry><title type="html">Menyembunyikan legend pada Bar Chart</title><link href="http://localhost:4000/dash-hide-legend-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan legend pada Bar Chart" /><published>2022-08-19T00:00:00+07:00</published><updated>2022-08-19T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-legend-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-legend-bar-chart/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated. Something.</p>
+
+<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/6.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan legend pada Line Chart</title><link href="http://localhost:4000/dash-hide-legend-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan legend pada Line Chart" /><published>2022-08-18T00:00:00+07:00</published><updated>2022-08-18T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-legend-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-legend-line-chart/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated. Something.</p>
+
+<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/6.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan x axis dan y axis pada Bar Chart</title><link href="http://localhost:4000/dash-hide-axis-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan x axis dan y axis pada Bar Chart" /><published>2022-08-17T00:00:00+07:00</published><updated>2022-08-17T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-axis-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-axis-bar-chart/"><![CDATA[<p>No more databases, comment moderation, or pesky updates to install-just your content. Markdown, Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment. Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.</p>
+
+<p>Sick of dealing with hosting companies? GitHub Pages are powered by Jekyll, so you can easily deploy your site using GitHub for free-custom domain name and all.</p>
+
+<h2 id="what-is-jekyll">What is Jekyll?</h2>
+
+<p>Jekyll is a simple, blog-aware, static site generator.</p>
+
+<p>You create your content as text files (Markdown), and organize them into folders. Then, you build the shell of your site using Liquid-enhanced HTML templates. Jekyll automatically stitches the content and templates together, generating a website made entirely of static assets, suitable for uploading to any server.</p>
+
+<p>Jekyll happens to be the engine behind GitHub Pages, so you can host your project’s Jekyll page/blog/website on GitHub’s servers for free.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><summary type="html"><![CDATA[No more databases, comment moderation, or pesky updates to install-just your content. Markdown, Liquid, HTML &amp; CSS go in. Static sites come out ready for deployment. Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/11.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/11.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan x axis atau y axis pada Line Chart</title><link href="http://localhost:4000/dash-hide-axis-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan x axis atau y axis pada Line Chart" /><published>2022-08-16T00:00:00+07:00</published><updated>2022-08-16T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-axis-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-axis-line-chart/"><![CDATA[<p>Pada post kali ini kita akan mencoba menghilangkan garis y axis dan menggantinya dengan memberikan text label.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Dengan Text Label")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph(figure=
+							go.Figure(
+								go.Scatter(
+								x = [1,2,3,4],
+								y = [1,4,9,16],
+								mode='lines+markers+text',
+								text=['1^2','2^2','3^2','4^2'],
+								textposition = 'top right',
+							),
+							go.Layout(
+								xaxis={'showgrid':False},
+								yaxis={'showgrid':False}
+							)
+						)
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+</code></pre></div></div>
+
+<h2 id="menulis-blok-kode">Menulis blok kode</h2>
+
+<p>Selanjutnya kita akan menyembunyikan garis Y axis.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Menyembunyikan Y Axis Pada Line Chart")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph(figure=
+							go.Figure(
+								go.Scatter(
+								x = [1,2,3,4],
+								y = [1,4,9,16],
+								mode='lines+markers+text',
+								text=[1,4,9,16],
+								textposition = 'top right',
+							),
+							go.Layout(
+								xaxis={'showgrid':False},
+								yaxis={'showgrid':False, 'visible': False, 'showticklabels': False}
+							)
+						)
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+</code></pre></div></div>
+
+<p>Pada kode di atas kita mengganti Text Label dari [‘1^2’,’2^2’,’3^2’,’4^2’] menjadi nilai dari Y yaitu [1,4,9,16]. Untuk menyembunyikan garis sumbu y pada parameter ‘yaxis’ ditambahkan <em>key</em> ‘visible’ dan ‘showticklabels’ yang keduanya bernilai False. Jika diperlukan untuk menyembunyikan sumbu x, kita juga bisa melakukann hal yang sama pada parameter ‘xaxis’.</p>
+
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
+
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>line_chart_hide_axis.py</em>) lalu kita jalankan dengan perintah.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python line_chart_hide_axis.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+</code></pre></div></div>
+
+<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
+
+<p><img src="/assets/images/line_chart_hide_axis.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Pada post kali ini kita akan mencoba menghilangkan garis y axis dan menggantinya dengan memberikan text label.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menambahkan Text Label pada Bar Chart dengan Dash Plotly.</title><link href="http://localhost:4000/dash-text-label-in-bar-chart/" rel="alternate" type="text/html" title="Menambahkan Text Label pada Bar Chart dengan Dash Plotly." /><published>2022-08-15T00:00:00+07:00</published><updated>2022-08-15T00:00:00+07:00</updated><id>http://localhost:4000/dash-text-label-in-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-text-label-in-bar-chart/"><![CDATA[<p>Memberikan Text Label pada Bar Chart memudahkan pengguna untuk melihat nilai pada sumbu y tanpa harus menurutkannya ke sumbu y sendiri, artinya dapat mengurangi energi yang dikeluarkan oleh pengguna dalam melihat sebuah grafik. Pada post kali ini kita akan membahas mengenai panambahan Text Label pada Bar Chart.</p>
+
+<h2 id="import-modul">Import Modul</h2>
+
+<p>Kita akan menggunakan contoh pada post <a href="https://farispriadi.github.io/dash-hide-grid-bar-chart/">Menyembunyikan grid Bar Chart</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart dengan Text Label")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(
+								x=['Jawa Barat','Jawa Tengah','Jawa Timur'], 
+								y=[27,35,38],
+							),
+							go.Layout(yaxis={'showgrid': False})
+						)
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+</code></pre></div></div>
+
+<p><em>html.Div</em> merupakan komponen html dalam Dash Plotly yang fungsinya sama dengan <em>div</em> pada HTML yaitu digunakan sebagai kontainer elemen HTML yang lain. <em>html.H2</em> kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek <em>Graph</em> yang berada pada modul <em>dcc</em>. Pada kode di atas kita akan membuat bar chart dengan menggunakan objek dari <em>Bar chart</em> . <em>figure</em> pada kelas Graph diisi dengan objek Figure dari <em>graph_objects</em>, dan argumen untuk kontruktor dari <em>go.Figure</em> diisi dengan <em>go.Bar</em>. Argumen <em>text</em> berisi <em>list</em> dari text label yang akan ditampilkan. Nilai <em>x</em> dan <em>y</em> axis disi dengan sebuah list yang mempunyai panjang yang sama. Pada kode di atas akan muncul Bar Chart yang memiliki text label berupa keterangan jumlah kota dan kabupaten dalam satu provinsi.</p>
+
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
+
+<p>Kode secara utuh akan tampil sebagai berikut.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(
+								x=['Jawa Barat','Jawa Tengah','Jawa Timur'], 
+								y=[27,35,38],
+								text=[27,35,38],
+								textposition = 'top right',
+								textfont=dict(size=16)
+							),
+							go.Layout(yaxis={'showgrid': False})
+						)
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+
+</code></pre></div></div>
+
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>bar_chart_with_text_label.py</em>) lalu kita jalankan dengan perintah.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python bar_chart_with_text_label
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+</code></pre></div></div>
+
+<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
+
+<p><img src="/assets/images/bar_chart_with_text_label.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><summary type="html"><![CDATA[Memberikan Text Label pada Bar Chart memudahkan pengguna untuk melihat nilai pada sumbu y tanpa harus menurutkannya ke sumbu y sendiri, artinya dapat mengurangi energi yang dikeluarkan oleh pengguna dalam melihat sebuah grafik. Pada post kali ini kita akan membahas mengenai panambahan Text Label pada Bar Chart.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menambahkan Text Label pada Line Chart dengan Dash Plotly.</title><link href="http://localhost:4000/dash-text-label-in-line-chart/" rel="alternate" type="text/html" title="Menambahkan Text Label pada Line Chart dengan Dash Plotly." /><published>2022-08-14T00:00:00+07:00</published><updated>2022-08-14T00:00:00+07:00</updated><id>http://localhost:4000/dash-text-label-in-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-text-label-in-line-chart/"><![CDATA[<p>Dalam sebuah grafik garis atau Line Chart kita biasanya memerlukan tambahan text di atas koordinat nilai dari x dan y untuk memudahkan membaca nilai pada titik tersebut. Penambahan text label pada Line Chart akan kita bahas pada post kali ini.</p>
+
+<h2 id="import-modul">Import Modul</h2>
+
+<p>Berbeda dengan contoh pada post <a href="https://farispriadi.github.io/dash-text-label-in-line-chart/">Membuat Line Chart dengan Dash Plotly</a>, kita akan membuat objek grafik garis tersebut dengan menggunakan modul <em>graph_objects</em></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+</code></pre></div></div>
+
+<p>impor <em>graph_objects</em> dari modul <em>plotly</em>, kemudian akses <em>graph_objects</em> tersebut dengan menggunakan alias <em>go</em>.</p>
+
+<h2 id="menulis-blok-kode">Menulis blok kode</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Dengan Text Label")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph(figure=
+							go.Figure(
+								go.Scatter(
+								x = [1,2,3,4],
+								y = [1,4,9,16],
+								mode='lines+markers+text',
+								text=['1^2','2^2','3^2','4^2'],
+								textposition = 'top right',
+								textfont=dict(size=16)
+							),
+							go.Layout(
+								xaxis={'showgrid':False},
+								yaxis={'showgrid':False}
+							)
+						)
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+</code></pre></div></div>
+
+<p><em>html.Div</em> merupakan komponen html dalam Dash Plotly yang fungsinya sama dengan <em>div</em> pada HTML yaitu digunakan sebagai kontainer elemen HTML yang lain. <em>html.H2</em> kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek <em>Graph</em> yang berada pada modul <em>dcc</em>. Pada kode di atas kita akan membuat line chart dengan menggunakan objek dari <em>scatter plot</em> . <em>figure</em> pada kelas Graph diisi dengan objek Figure dari <em>graph_objects</em>, dan argumen untuk kontruktor dari <em>go.Figure</em> diisi dengan <em>go.Scatter</em> yang sebenarnya kita akan membuat grafik dengan tipe <em>scatter plot</em>. Namun dengan menggunakan <em>mode=lines+markers+text</em> akan membuat grafik tersebut menjadi sebuah Line Chart, sekaligus memberikan <em>marker</em> bulat dan text label. Argumen <em>text</em> berisi <em>list</em> dari text label yang akan ditampilkan. Nilai <em>x</em> dan <em>y</em> axis disi dengan sebuah list yang mempunyai panjang yang sama. Misalkan x adalah <em>list</em> nama daftar bilangan dan y adalah <em>list</em> hasil pangkat 2 dari bilangan tersebut. Pada kode di atas akan muncul Line Chart yang memiliki text label berupa keterangan dari bilangan simbol pangkat 2.</p>
+
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
+
+<p>Kode secara utuh akan tampil sebagai berikut.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Dengan Text Label")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph(figure=
+							go.Figure(
+								go.Scatter(
+								x = [1,2,3,4],
+								y = [1,4,9,16],
+								mode='lines+markers+text',
+								text=['1^2','2^2','3^2','4^2'],
+								textposition = 'top right',
+							),
+							go.Layout(
+								xaxis={'showgrid':False},
+								yaxis={'showgrid':False}
+							)
+						)
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+</code></pre></div></div>
+
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>line_chart_with_text_label.py</em>) lalu kita jalankan dengan perintah.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python line_chart_with_text_label
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+</code></pre></div></div>
+
+<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
+
+<p><img src="/assets/images/line_chart_with_text_label.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Dalam sebuah grafik garis atau Line Chart kita biasanya memerlukan tambahan text di atas koordinat nilai dari x dan y untuk memudahkan membaca nilai pada titik tersebut. Penambahan text label pada Line Chart akan kita bahas pada post kali ini.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan grid Bar Chart</title><link href="http://localhost:4000/dash-hide-grid-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan grid Bar Chart" /><published>2022-08-13T00:00:00+07:00</published><updated>2022-08-13T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-grid-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-grid-bar-chart/"><![CDATA[<p>Secara default untuk membuat Bar Chart pada Dash Plotly grid pada tampilan grafik akan muncul. Pada post kali ini akan kita sembunyikan grid pada Bar Chart.</p>
+
+<h2 id="membuat-bar-chart">Membuat Bar Chart</h2>
+
+<p>Kita akan membuat Bar Chart menggunakan kode dari <a href="https://farispriadi.github.io/dash-simple-bar-chart/">Membuat Bar Chart dengan Dash Plotly</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
+						)
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+
+</code></pre></div></div>
+
+<h2 id="menghilangkan-grid">Menghilangkan Grid</h2>
+<p>Grid pada bar chart hanya muncul pada subu y saja, sehingga cukup menyembunyikan garis yang muncul dari yaxis. Dengan membuat objek dari<em>go.Layout</em> dan diisi dengan dictionary dengan <em>key</em> <em>yaxis: {‘showgrid’: False}</em>. Sehingga kode akan menjadi sebagai berikut.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Bar Chart Sederhana dengan Dash Plotly")
+				]),
+				html.Div([
+					# Div untuk Bar Chart
+					dcc.Graph( figure =
+						go.Figure(
+							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38]),
+							go.Layout(yaxis={'showgrid': False})
+						)
+
+
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+</code></pre></div></div>
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
+
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>no_grid_bar_chart.py</em>) lalu kita jalankan dengan perintah.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python no_grid_bar_chart.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+</code></pre></div></div>
+
+<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.
+<img src="/assets/images/hide_grid_bar_chart.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><summary type="html"><![CDATA[Secara default untuk membuat Bar Chart pada Dash Plotly grid pada tampilan grafik akan muncul. Pada post kali ini akan kita sembunyikan grid pada Bar Chart.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan Grid pada Line Chart</title><link href="http://localhost:4000/dash-hide-grid-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan Grid pada Line Chart" /><published>2022-08-12T00:00:00+07:00</published><updated>2022-08-12T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-grid-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-grid-line-chart/"><![CDATA[<p>Terkadang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.</p>
 
 <h2 id="membuat-line-chart">Membuat Line Chart</h2>
 
-<p>Kita akan membuat Line Chart menggunakan kode dari <a href="https://farispriadi.github.io/dash-simple-line-chart/">Membuat Line Chart dengan Dash Plotl</a>.</p>
+<p>Kita akan membuat Line Chart menggunakan kode dari <a href="https://farispriadi.github.io/dash-simple-line-chart/">Membuat Line Chart dengan Dash Plotly</a>.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
 from dash import html
@@ -97,7 +526,7 @@ Dash is running on http://127.0.0.1:8050/
 </code></pre></div></div>
 
 <p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.
-<img src="/assets/images/hide_grid_line_chart.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Membuat cell pada Dash Data Table dapat diedit</title><link href="http://localhost:4000/dash-editable-table/" rel="alternate" type="text/html" title="Membuat cell pada Dash Data Table dapat diedit" /><published>2022-08-11T00:00:00+07:00</published><updated>2022-08-11T00:00:00+07:00</updated><id>http://localhost:4000/dash-editable-table</id><content type="html" xml:base="http://localhost:4000/dash-editable-table/"><![CDATA[<p>Tabel biasanya digunakan untuk menampilkan data yang mempunyai baris dan kolom. Tabel juga terkadang dibuat tidak hanya untuk menampilkan data namun untuk mengisi data. Kali ini kita akan membuat tabel yang nilainya dapat Anda ubah atau dapat diupdate.</p>
+<img src="/assets/images/hide_grid_line_chart.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Terkadang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Membuat cell pada Dash Data Table dapat diedit</title><link href="http://localhost:4000/dash-editable-table/" rel="alternate" type="text/html" title="Membuat cell pada Dash Data Table dapat diedit" /><published>2022-08-11T00:00:00+07:00</published><updated>2022-08-11T00:00:00+07:00</updated><id>http://localhost:4000/dash-editable-table</id><content type="html" xml:base="http://localhost:4000/dash-editable-table/"><![CDATA[<p>Tabel biasanya digunakan untuk menampilkan data yang mempunyai baris dan kolom. Tabel juga terkadang dibuat tidak hanya untuk menampilkan data namun untuk mengisi data. Kali ini kita akan membuat tabel yang nilainya dapat Anda ubah atau dapat diupdate.</p>
 
 <h2 id="membuat-table">Membuat Table</h2>
 
@@ -291,494 +720,4 @@ Dash is running on http://127.0.0.1:8050/
 
 <p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
 
-<p><img src="/assets/images/simple_table_filter.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="table" /><category term="tutorial" /><summary type="html"><![CDATA[Ketika menemui tabel ada kalanya kita ingin dengan cepat menemukan sebuah nilai yang kita cari dengan cepat. Maka dari itu kita memerlukan fitur filter dalama tabel. Kali ini kita akan menambahkan fitur filter pada Dash Data Table.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mengurutkan Nilai pada Dash Data Table</title><link href="http://localhost:4000/dash-sortable-table/" rel="alternate" type="text/html" title="Mengurutkan Nilai pada Dash Data Table" /><published>2022-08-09T00:00:00+07:00</published><updated>2022-08-09T00:00:00+07:00</updated><id>http://localhost:4000/dash-sortable-table</id><content type="html" xml:base="http://localhost:4000/dash-sortable-table/"><![CDATA[<p>Kita sering menemukan tabel dan dalam membaca tabel tentu saja mau tidak mau kita akan mulai dari kiri atas menuju ke kanan atas untuk membaca semua kolom, kemudian secara zigzag pindah ke kiri di bawah menuju kanan bawah. Namun Setelah kita menemukan kolom yang kita lebih berikan perhatian, kita cenderung membaca dari atas ke bawah. Untuk memudahkan dalam pembacaan data, akan lebih mudah kiranya jika kita dapat mengurutkan sebuah kolom baik urut secara <em>ascending</em> maupun <em>descending</em>.</p>
-
-<h2 id="membuat-table">Membuat Table</h2>
-
-<p>Dengan Dash Datatable memungkinkan sebuah kolom dari sebuah table dapat diurutkan. Untuk membuat sebuah tabel dapat diurutkan kita akan memerlukan parameter <em>sort_action=’native’</em> pada saat membuat objek DataTable. Kita akan menggunakan kode dari <a href="https://farispriadi.github.io/dash-data-table/">Membuat Table dengan Dash Plotly</a></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-df = pd.DataFrame("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-					html.H2("Tabel Sederhana Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk table
-					dash_table.DataTable(df.to_dict('records'), [ {'name': i, 'id': i} for i in df.columns])
-				]),
-			])
-
-if __name__ == "__main__":
-	app.run_server()
-
-</code></pre></div></div>
-
-<h2 id="menambahkan-fitur-pengurutan-sorting">Menambahkan Fitur Pengurutan (Sorting)</h2>
-
-<p>Kita perlu menambahkan <em>sort_action=’native’</em> pada saat instantiasi DataTable, sehingga kode akan menjadi sebagai berikut. selain itu kita akan menambahkan <em>keyword argument</em> yaitu <em>data</em> dan <em>columns</em>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-					html.H2("Tabel Dengan  Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk table
-					dash_table.DataTable(
-						data = df.to_dict('records'), 
-						columns=[ {'name': i, 'id': i} for i in df.columns],
-						sort_action='native',
-					)
-				]),
-			])
-
-if __name__ == "__main__":
-	app.run_server()
-
-</code></pre></div></div>
-<p>Dari kode di atas kita sudah bisa melakukan pengurutan pada sebuah tabel. Namun jika kita memerlukan fitur agar pengurutan bisa dilakukan pada multi kolom, perlu ada tambahan argumen lagi yaitu <em>sort_mode=’multi’</em>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-					html.H2("Tabel Dengan  Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk table
-					dash_table.DataTable(
-						data = df.to_dict('records'), 
-						columns=[ {'name': i, 'id': i} for i in df.columns],
-						sort_action='native',
-						sort_mode='multi',
-					)
-				]),
-			])
-
-if __name__ == "__main__":
-	app.run_server()
-
-</code></pre></div></div>
-
-<p>Dengan menambahkan fitur <em>sort_mode=’multi’</em> memungkinkan tabel dapat diurutkan berdasarkan 2 atau lebih kolom.</p>
-
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>sortable_table.py</em>) lalu kita jalankan dengan perintah.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python sortable_table.py
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app 'test' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
-</code></pre></div></div>
-
-<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="table" /><category term="tutorial" /><summary type="html"><![CDATA[Kita sering menemukan tabel dan dalam membaca tabel tentu saja mau tidak mau kita akan mulai dari kiri atas menuju ke kanan atas untuk membaca semua kolom, kemudian secara zigzag pindah ke kiri di bawah menuju kanan bawah. Namun Setelah kita menemukan kolom yang kita lebih berikan perhatian, kita cenderung membaca dari atas ke bawah. Untuk memudahkan dalam pembacaan data, akan lebih mudah kiranya jika kita dapat mengurutkan sebuah kolom baik urut secara ascending maupun descending.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Membuat Bar Chart dengan Dash Plotly.</title><link href="http://localhost:4000/dash-simple-bar-chart/" rel="alternate" type="text/html" title="Membuat Bar Chart dengan Dash Plotly." /><published>2022-08-08T00:00:00+07:00</published><updated>2022-08-08T00:00:00+07:00</updated><id>http://localhost:4000/dash-simple-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-simple-bar-chart/"><![CDATA[<p>Bar chart atau diagram batang digunakan untuk menampilkan data yang berkategori. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Bar Chart. Berbeda denga Line Chart, untuk membuat Bar Chart, kita akan membutuhkan <em>plotly graph objects</em>.</p>
-
-<h2 id="import-modul-yang-diperlukan">Import modul yang diperlukan</h2>
-
-<p>Untuk membuat bar chart sederhana, kita memerlukan beberapa modul dalam dash plotly.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-from plotly import graph_objects as go
-
-
-</code></pre></div></div>
-
-<p><em>import dash</em> digunakan untuk mengimpor modul dash. <em>from dash import html</em> digunakan untuk mengimpor html dash atau <em>dash html components</em>, komponen ini memungkinkan kita memasukkan komponen HTML dengan menggunakan sintaks python. <em>from dash import dcc</em> digunakan untuk mengimpor komponen core dari dash atau <em>dash core components</em> yang digunakan untuk memasukkan komponen interaktif termasuk membuat grafik. Untuk bar chart kita memerlukan <em>plotly graph object</em> karena dalam <em>dcc.Graph</em> hanya menyediakan Line Chart dan Scatter Plot.</p>
-
-<h2 id="membuat-layout">Membuat Layout</h2>
-
-<p>Selanjutnya kita akan membuat layout atau tata letak.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-...
-
-
-from plotly import graph_objects as go
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-				]),
-				html.Div([
-					# Div untuk Bar Chart
-				]),
-			])
-
-</code></pre></div></div>
-
-<p><em>app = dash.Dash(__name__)</em> kode ini adalah langkah awal kita untuk membuat objek dash yang disimpan dalam variable <em>app</em>. Selanjutnya <em>app.layout</em>, kita akan meng-assign atau memasukkan layout kita ke dalam atribut layout yang berada di dalam <em>app</em>. Layout tersebut akan kita buat dengan satu <em>Div</em> utama dan di dalamnya terdapat dua <em>Div</em> anakan. Dimana <em>Div</em> pertama untuk meletakkan judul dan <em>Div</em> kedua untuk meletakkan grafik. Tanda <em>#</em> merupakan <em>comment</em> yang digunakan sebagai keterangan saja.</p>
-
-<h2 id="menuliskan-konten">Menuliskan konten</h2>
-
-<p>Selanjutnya kita akan menambahkan judul dan grafiknya</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-...
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Bar Chart Sederhana dengan Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk Bar Chart
-					dcc.Graph( figure =
-						go.Figure(
-							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
-						)
-
-
-					)
-				]),
-			])
-</code></pre></div></div>
-
-<p><em>html.H2</em> kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek <em>Graph</em> yang berada pada modul <em>dcc</em>. Pada kode di atas kita akan membuat bar chart sederhana . <em>figure</em> pada kelas Graph diisi dengan objek Figure dari <em>graph_objects</em>, dan argumen untuk kontruktor dari <em>go.Figure</em> diisi dengan <em>go.Bar</em> untuk secara spesifik membuat bar chart. Nilai <em>x</em> dan <em>y</em> axis disi dengan sebuah list yang mempunyai panjang yang sama. Misalkan x adalah <em>list</em> nama provinsi dan y adalah <em>list</em> jumlah kabupaten dan kota dalam provnsi tersebut.</p>
-
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Dengan demikian kode secara keseluruhan adalah sebagai berikut:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-from plotly import graph_objects as go
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Bar Chart Sederhana dengan Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk Bar Chart
-					dcc.Graph( figure =
-						go.Figure(
-							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
-						)
-
-
-					)
-				]),
-			])
-
-if __name__ == '__main__':
-	app.run_server()
-
-</code></pre></div></div>
-
-<p><em>app.run_server()</em> kode ini ditambahkan ke dalam main agar server Dash dapat berjalan. File ini akan disimpan dengan nama <em>simple_bar_chart.py</em>, Anda dapat mengganti nama sesuai dengan yang diinginkan.</p>
-
-<p>Seperti kode python lainnya, untuk menjalankannya kode ini, bisa menggunakan IDE seperti PyCharm atau run di CMD  jika di windows atau Terminal jika di distibusi Linux Ubuntu. Jika menggunakan terminal maka cara menjalankan kode dari Linux Ubuntu.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python simple_bar_chart.py
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app 'test' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
-</code></pre></div></div>
-
-<p>Sekarang anda dapat membuka browser dan mengakses aplikasi dash dengan alamat url <em>http://127.0.0.1:8050</em> 
-<img src="/assets/images/simple_bar_chart.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[Bar chart atau diagram batang digunakan untuk menampilkan data yang berkategori. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Bar Chart. Berbeda denga Line Chart, untuk membuat Bar Chart, kita akan membutuhkan plotly graph objects.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Membuat Table dengan Dash Plotly</title><link href="http://localhost:4000/dash-data-table/" rel="alternate" type="text/html" title="Membuat Table dengan Dash Plotly" /><published>2022-08-07T00:00:00+07:00</published><updated>2022-08-07T00:00:00+07:00</updated><id>http://localhost:4000/dash-data-table</id><content type="html" xml:base="http://localhost:4000/dash-data-table/"><![CDATA[<p>Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom. Tabel lebih mudah digunakan untuk menyajikan komparasi data yang mempunyai perbedaan unit. Dengan menggunakan Dash Datatable kita akan membuat tampilan tabel sederhana.</p>
-
-<h2 id="import-modul-yang-diperlukan">Import modul yang diperlukan</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-
-</code></pre></div></div>
-
-<p><em>import dash</em> digunakan untuk mengimpor modul dash. untuk membuat table kita perlu mengimpor <em>dash_table</em> dari modul <em>dash</em>. <em>from dash import html</em> digunakan untuk mengimpor html dash atau <em>dash html components</em>, komponen ini memungkinkan kita memasukkan komponen HTML dengan menggunakan sintaks python. Kita perlu membuat dataframe dengan membaca sebuah csv file dari url, sehingga untuk mebgimpor pandas kita perlu menuliskan <em>import pandas as pd</em>.</p>
-
-<h2 id="membuat-layout">Membuat Layout</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-				]),
-				html.Div([
-					# Div untuk table
-				]),
-			])
-
-
-</code></pre></div></div>
-<p><em>app = dash.Dash(__name__)</em> kode ini adalah langkah awal kita untuk membuat objek dash yang disimpan dalam variable <em>app</em>. Selanjutnya <em>app.layout</em>, kita akan meng-assign atau memasukkan layout kita ke dalam atribut layout yang berada di dalam <em>app</em>. Layout tersebut akan kita buat dengan satu <em>Div</em> utama dan di dalamnya terdapat dua <em>Div</em> anakan. Dimana <em>Div</em> pertama untuk meletakkan judul dan <em>Div</em> kedua untuk meletakkan tabel. Tanda <em>#</em> merupakan <em>comment</em> yang digunakan sebagai keterangan saja.</p>
-
-<h2 id="menuliskan-konten">Menuliskan konten</h2>
-
-<p>Disini kita akan mengisi bagian Div yang sudah kita buat sebelumnya dengan judul dan tabel.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-					html.H2("Tabel Sederhana Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk table
-					dash_table.DataTable(df.to_dict('records'), [ {'name': i, 'id': i} for i in df.columns])
-				]),
-			])
-
-if __name__ == "__main__":
-	app.run_server()
-
-
-</code></pre></div></div>
-
-<p>Kita perlu membuat sebuah Dataframe yang disimpan dalam variable <em>df</em>. Dataframe tersebut dibuat dengan membaca file csv dari url yang kami ambil dari Bandung Open Data dengan judul <strong>Tahun 2017 - Data Laporan Iklim Kota Bandung</strong>. Untuk membuat judul dengan ukuran heading 2 perlu menggunakan kode <em>html.H2</em>. Sedangkan tabel dibuat dengan meninstantiasi objek dari <em>dash_table.DataTable</em>, dimana argumen pertama diisi dengan <em>dictionary</em> yang merupakan konversi dari Dataframe dan argumen kedua adalah nama sebuah <em>list of dictionary</em> untuk membuat label kolom tabel.</p>
-
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Selanjutnya kita bisa simpan dengan nama <em>simple_table.py</em> , dan menjalankan kode diatas dengan perintah seperti di bawah ini.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python simple_table.py
-
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app 'test' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
-</code></pre></div></div>
-
-<p>Sekarang anda dapat membuka browser dan mengakses aplikasi dash dengan alamat url <em>http://127.0.0.1:8050</em></p>
-
-<p><img src="/assets/images/simple_table.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="table" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom. Tabel lebih mudah digunakan untuk menyajikan komparasi data yang mempunyai perbedaan unit. Dengan menggunakan Dash Datatable kita akan membuat tampilan tabel sederhana.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Membuat Line Chart dengan Dash Plotly.</title><link href="http://localhost:4000/dash-simple-line-chart/" rel="alternate" type="text/html" title="Membuat Line Chart dengan Dash Plotly." /><published>2022-08-06T00:00:00+07:00</published><updated>2022-08-06T00:00:00+07:00</updated><id>http://localhost:4000/dash-simple-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-simple-line-chart/"><![CDATA[<p>Line chart atau diagram garis digunakan untuk menampilkan tren data yang kontinyu, misalkan time series data. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Line Chart.</p>
-
-<h2 id="import-modul-yang-diperlukan">Import modul yang diperlukan</h2>
-
-<p>Untuk membuat line chart sederhana, kita memerlukan beberapa modul dalam dash plotly.</p>
-
-<div class="code-header">
-  <button class="copy-code-button">
-    Copy
-  </button>
-</div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-</code></pre></div></div>
-
-<p><em>import dash</em> digunakan untuk mengimpor modul dash. <em>from dash import html</em> digunakan untuk mengimpor html dash atau <em>dash html components</em>, komponen ini memungkinkan kita memasukkan komponen HTML dengan menggunakan sintaks python. <em>from dash import dcc</em> digunakan untuk mengimpor komponen core dari dash atau <em>dash core components</em> yang digunakan untuk memasukkan komponen interaktif termasuk membuat grafik.</p>
-
-<h2 id="membuat-layout">Membuat Layout</h2>
-
-<p>Selanjutnya kita akan membuat layout atau tata letak.</p>
-
-<div class="code-header">
-  <button class="copy-code-button">
-    Copy
-  </button>
-</div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-...
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-				]),
-				html.Div([
-					# Div untuk Line Chart
-				]),
-			])
-
-</code></pre></div></div>
-
-<p><em>app = dash.Dash(__name__)</em> kode ini adalah langkah awal kita untuk membuat objek dash yang disimpan dalam variable <em>app</em>. Selanjutnya <em>app.layout</em>, kita akan meng-assign atau memasukkan layout kita ke dalam atribut layout yang berada di dalam <em>app</em>. Layout tersebut akan kita buat dengan satu <em>Div</em> utama dan di dalamnya terdapat dua <em>Div</em> anakan. Dimana <em>Div</em> pertama untuk meletakkan judul dan <em>Div</em> kedua untuk meletakkan grafik. Tanda <em>#</em> merupakan <em>comment</em> yang digunakan sebagai keterangan saja.</p>
-
-<h2 id="menuliskan-konten">Menuliskan konten</h2>
-
-<p>Selanjutnya kita akan menambahkan judul dan grafiknya</p>
-
-<div class="code-header">
-  <button class="copy-code-button">
-    Copy
-  </button>
-</div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-...
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Line Chart Sederhana dengan Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk Line Chart
-					dcc.Graph( figure =
-						{
-							'data' : [{
-								'x' : [1,2,3,4,5,6,7,8,9],
-								'y' : [1,4,9,16,25,36,49,64,81],
-								'mode': 'lines',
-
-							}],
-							'layout' : {
-								'title' : 'Pangkat Kuadrat',
-							}
-						}
-
-
-					)
-				]),
-			])
-</code></pre></div></div>
-
-<p><em>html.H2</em> kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek <em>Graph</em> yang berada pada modul <em>dcc</em>. Pada kode di atas kita akan membuat line chart sederhana . <em>figure</em> pada kelas Graph  mempunyai nilai berupa <em>dict</em>, dimana dictionary tersebut berisi <em>key</em> data  untuk mengisi data set dan <em>key</em> layout untuk mengkonfigurasi tata letak grafik. Untuk membuat line chart pada <em>key</em> mode diisi dengan nilai <em>‘lines’</em>.</p>
-
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Dengan demikian kode secara keseluruhan adalah sebagai berikut:</p>
-
-<div class="code-header">
-  <button class="copy-code-button">
-    Copy
-  </button>
-</div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Line Chart Sederhana dengan Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk Line Chart
-					dcc.Graph( figure =
-						{
-							'data' : [{
-								'x' : [1,2,3,4,5,6,7,8,9],
-								'y' : [1,4,9,16,25,36,49,64,81],
-								'mode': 'lines',
-
-							}],
-							'layout' : {
-								'title' : 'Pangkat Kuadrat',
-							}
-						}
-
-
-					)
-				]),
-			])
-
-if __name__ == '__main__':
-	app.run_server()
-
-</code></pre></div></div>
-
-<p><em>app.run_server()</em> kode ini ditambahkan ke dalam main agar server Dash dapat berjalan. File ini akan disimpan dengan nama <em>simple_line_chart.py</em>, Anda dapat mengganti nama sesuai dengan yang diinginkan.</p>
-
-<p>Seperti kode python lainnya, untuk menjalankannya kode ini, bisa menggunakan IDE seperti PyCharm atau run di CMD  jika di windows atau Terminal jika di distibusi Linux Ubuntu. Jika menggunakan terminal maka cara menjalankan kode dari Linux Ubuntu.</p>
-
-<div class="code-header">
-  <button class="copy-code-button">
-    Copy
-  </button>
-</div>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python simple_line_chart.py
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app 'test' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
-</code></pre></div></div>
-
-<p>Sekarang anda dapat membuka browser dan mengakses aplikasi dash dengan alamat url <em>http://127.0.0.1:8050</em> 
-<img src="/assets/images/simple_line_chart.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[Line chart atau diagram garis digunakan untuk menampilkan tren data yang kontinyu, misalkan time series data. Dengan menggunakan Dash Plotly kita bisa dengan mudah membuat Line Chart.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Arus Teknologi Informasi di Desa</title><link href="http://localhost:4000/arus-teknologi-desa/" rel="alternate" type="text/html" title="Arus Teknologi Informasi di Desa" /><published>2022-01-16T00:00:00+07:00</published><updated>2022-01-16T00:00:00+07:00</updated><id>http://localhost:4000/arus-teknologi-desa</id><content type="html" xml:base="http://localhost:4000/arus-teknologi-desa/"><![CDATA[<p>Adanya internet menyebabkan arus informasi tidak bisa terbendung. Mau di kota ataupun pelosok desa semua bisa mengakses layanan gratis di internet, asalkan di desa tersebut sudah ada tower provider telekomunikasi.</p>
-
-<p><em>Youtube</em> adalah platform <em>video sharing</em> gratis.</p>]]></content><author><name>faris</name></author><category term="opini" /><category term="teknologi" /><category term="featured" /><summary type="html"><![CDATA[Adanya internet menyebabkan arus informasi tidak bisa terbendung. Mau di kota ataupun pelosok desa semua bisa mengakses layanan gratis di internet, asalkan di desa tersebut sudah ada tower provider telekomunikasi.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/3.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/3.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Inovasi Desa</title><link href="http://localhost:4000/inovasi-desa/" rel="alternate" type="text/html" title="Inovasi Desa" /><published>2022-01-05T00:00:00+07:00</published><updated>2022-01-05T00:00:00+07:00</updated><id>http://localhost:4000/inovasi-desa</id><content type="html" xml:base="http://localhost:4000/inovasi-desa/"><![CDATA[<p>Penting kita sadari bahwa desa memegang peran krusial dari kecanggihan dan gemerlapnya kota besar. Desa adalah penyumbang berlian yang kini dinikmati kota besar. Penyumbang bahan makanan tersegar dan terbaik ya berasal dari desa. Namun hal yang aneh, hasil terbaik desa mereka jual ke kota besar, dengan harapan mendapat keuntungan yang besar, sedangkan mereka sendiri membutuhkan barang tersebut. Terkadang malahan orang desa bukannya menikmati bahan makanan terbaik yang mereka tanam, malah membeli produk impor serupa dari pemerintah yang mempunyai grade lebih rendah. Miris bukan ?.</p>
-
-<h4 id="inovasi-dan-teknologi-di-desa">Inovasi dan Teknologi di Desa</h4>
-
-<p>Isu mengenai penggunaan teknologi untuk melakukan inovasi di desa bukanlah barang baru. Mungkin malah sudah menjadi isu lama. Implementasinya sudah banyak, banyak pula yang berhasil. Namun terkadang inovasi dan pemanfaatan teknologi ini bukanlah untuk memakmurkan masyarakat desa itu, tapi memperkaya kota besar. Upsss..terlihat sinis sekali ya ..?</p>
-
-<p>Dengan terbukanya informasi dan ilmu pengetahuan melalui internet, kita mulai disuguhkan kilau berlian yang ada di desa. Desa-desa mulai memperbaiki diri dan bervisi melakukan inovasi Dari-Oleh-Untuk Desa. Kita bisa <em>googling</em> atau cari di <em>youtube</em>, dimana orang-orang di desa bisa membuat helikopter, robotik bahkan hacking tanpa perlu mereka pergi ke kota. Kota besar perlu waspada.</p>
-
-<p>Banyak desa yang berhasil dengan transformasi contohnya dengan BUMDes-nya. Ini kabar yang baik menurut saya. Bayangkan jika desa bisa mengelola sumber daya mereka sendiri dan menyajikannya dalam barang/jasa yang siap konsumsi, betapa akan kocar kacirnya kota besar. Mungkin perputaran uang tidak akan berada di kota lagi, tapi tersebar secara <em>distributed</em> di desa-desa sesuai dengan kemampuannya. Tentu saja keluarnya kebijakan mangenai undang-undang desa membantu <em>environment</em> desa dalam bertumbuh.</p>
-
-<p>Menurut para ahli kemampuan desa dalam mengelola sumber daya secara maksimal akan semakin terasa manfaatnya jika bersinergi langsung dengan masyarakat desanya. Berfokus bukan pada keuntungan berupa uang, namun berfokus pada kemakmuran warganya. Sesuai dengan Undang-Undang 1945 pasal 33. Satu hal lagi yang akan mem-<em>booster</em> pengelolaan di desa adalah melakukan <em>link-and-math</em> dengan desa sekitar. Sehingga beberapa desa sekitar dapat saling bertukar keuntungan dan kemampuan terbaik mereka. Tentu saja setiap desa perlu menentukan dirinya sebagai <em>centra</em> atau pusat barang yang mempunyai <em>niche</em> pasar tertarget. Jika seperti ini sepertinya sulit menciptakan monopoli.</p>
-
-<p>Ketahanan desa adalah pertahanan pertama sebuah negara. Karena dengan mandirinya desa-desa di Indonesia, tidak perlu ada lagi bansos dari pemerintah pusat. Desa dan warganya dapat menghidupi mereka sendiri, memakmurkan warga mereka sendiri. Dan yang jelas hasil terbaik desa akan dinikmati oleh warganya sendiri.</p>]]></content><author><name>faris</name></author><category term="opini" /><category term="desa" /><category term="sticky" /><summary type="html"><![CDATA[Penting kita sadari bahwa desa memegang peran krusial dari kecanggihan dan gemerlapnya kota besar. Desa adalah penyumbang berlian yang kini dinikmati kota besar. Penyumbang bahan makanan tersegar dan terbaik ya berasal dari desa. Namun hal yang aneh, hasil terbaik desa mereka jual ke kota besar, dengan harapan mendapat keuntungan yang besar, sedangkan mereka sendiri membutuhkan barang tersebut. Terkadang malahan orang desa bukannya menikmati bahan makanan terbaik yang mereka tanam, malah membeli produk impor serupa dari pemerintah yang mempunyai grade lebih rendah. Miris bukan ?.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/home.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/home.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p><img src="/assets/images/simple_table_filter.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="table" /><category term="tutorial" /><summary type="html"><![CDATA[Ketika menemui tabel ada kalanya kita ingin dengan cepat menemukan sebuah nilai yang kita cari dengan cepat. Maka dari itu kita memerlukan fitur filter dalama tabel. Kali ini kita akan menambahkan fitur filter pada Dash Data Table.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

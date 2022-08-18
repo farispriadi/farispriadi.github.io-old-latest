@@ -1,27 +1,116 @@
 ---
 layout: post
-title:  "Menyembunyikan x axis dan y axis pada Line Chart"
+title:  "Menyembunyikan x axis atau y axis pada Line Chart"
 author: faris
 categories: [ dash, plotly, line chart, tutorial ]
-image: assets/images/6.jpg
-tags: featured
+
+image: https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated. Something.
+Pada post kali ini kita akan mencoba menghilangkan garis y axis dan menggantinya dengan memberikan text label.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+```
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
 
-Jekyll also offers powerful support for code snippets:
+app = dash.Dash(__name__)
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Dengan Text Label")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph(figure=
+							go.Figure(
+								go.Scatter(
+								x = [1,2,3,4],
+								y = [1,4,9,16],
+								mode='lines+markers+text',
+								text=['1^2','2^2','3^2','4^2'],
+								textposition = 'top right',
+							),
+							go.Layout(
+								xaxis={'showgrid':False},
+								yaxis={'showgrid':False}
+							)
+						)
+					)
+				]),
+			])
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+if __name__ == '__main__':
+	app.run_server()
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+```
+
+
+## Menulis blok kode
+
+Selanjutnya kita akan menyembunyikan garis Y axis.
+
+```
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Menyembunyikan Y Axis Pada Line Chart")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph(figure=
+							go.Figure(
+								go.Scatter(
+								x = [1,2,3,4],
+								y = [1,4,9,16],
+								mode='lines+markers+text',
+								text=[1,4,9,16],
+								textposition = 'top right',
+							),
+							go.Layout(
+								xaxis={'showgrid':False},
+								yaxis={'showgrid':False, 'visible': False, 'showticklabels': False}
+							)
+						)
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+```
+
+Pada kode di atas kita mengganti Text Label dari ['1^2','2^2','3^2','4^2'] menjadi nilai dari Y yaitu [1,4,9,16]. Untuk menyembunyikan garis sumbu y pada parameter 'yaxis' ditambahkan *key* 'visible' dan 'showticklabels' yang keduanya bernilai False. Jika diperlukan untuk menyembunyikan sumbu x, kita juga bisa melakukann hal yang sama pada parameter 'xaxis'.
+
+## Menjalankan Kode
+
+
+Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file *line_chart_hide_axis.py*) lalu kita jalankan dengan perintah.
+
+```
+$ python line_chart_hide_axis.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+```
+
+
+Anda bisa buka browser dan arahkan ke url *http://127.0.0.1:8050*.
+
+![Tampilan]({{ site.baseurl }}/assets/images/line_chart_hide_axis.png)

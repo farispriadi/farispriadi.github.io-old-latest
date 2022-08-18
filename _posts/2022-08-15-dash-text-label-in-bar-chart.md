@@ -5,7 +5,7 @@ author: faris
 categories: [ dash, plotly, bar chart, tutorial ]
 image: https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg
 ---
-Memeberikan Text Label pada Bar Chart memudahkan pengguna untuk melihat nilai pada sumbu y tanpa harus menurutkannya ke sumbu y sendiri, artinya dapat mengurangi energi yang dikeluarkan oleh pengguna dalam melihat sebuah grafik. Pada post kali ini kita akan membahas mengenai panambahan Text Label pada Bar Chart.
+Memberikan Text Label pada Bar Chart memudahkan pengguna untuk melihat nilai pada sumbu y tanpa harus menurutkannya ke sumbu y sendiri, artinya dapat mengurangi energi yang dikeluarkan oleh pengguna dalam melihat sebuah grafik. Pada post kali ini kita akan membahas mengenai panambahan Text Label pada Bar Chart.
 
 ## Import Modul
 

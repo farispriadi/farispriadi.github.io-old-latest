@@ -5,7 +5,7 @@ author: faris
 categories: [ dash, plotly, line chart, tutorial ]
 image: https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg
 ---
-Terkdang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.
+Terkadang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.
 
 
 ## Membuat Line Chart

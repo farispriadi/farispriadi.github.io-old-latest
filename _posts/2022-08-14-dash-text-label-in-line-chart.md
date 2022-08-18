@@ -9,7 +9,7 @@ Dalam sebuah grafik garis atau Line Chart kita biasanya memerlukan tambahan text
 
 ## Import Modul
 
-Berbeda dengan contoh pada post [Membuat Line Chart dengan Dash Plotly](https://farispriadi.github.io/dash-simple-line-chart/), kita akan membuat objek grafik garis tersebut dengan menggunakan modul *graph_objects*
+Berbeda dengan contoh pada post [Membuat Line Chart dengan Dash Plotly](https://farispriadi.github.io/dash-text-label-in-line-chart/), kita akan membuat objek grafik garis tersebut dengan menggunakan modul *graph_objects*
 
 ```
 import dash

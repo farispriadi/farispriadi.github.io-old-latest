@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Line Chart dengan Multi Datasets"
+title:  "Menyembunyikan legend pada Line Chart"
 author: faris
 categories: [ dash, plotly, line chart, tutorial ]
 image: https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg

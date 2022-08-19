@@ -1,21 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-19T01:36:55+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>opini dan log seorang programmer.</subtitle><entry><title type="html">Menyembunyikan legend pada Bar Chart</title><link href="http://localhost:4000/dash-multi-datasets-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan legend pada Bar Chart" /><published>2022-08-19T00:00:00+07:00</published><updated>2022-08-19T00:00:00+07:00</updated><id>http://localhost:4000/dash-multi-datasets-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-multi-datasets-bar-chart/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated. Something.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-20T00:08:35+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>opini dan log seorang programmer.</subtitle><entry><title type="html">Bar Chart dengan Multi Datasets</title><link href="http://localhost:4000/dash-multi-datasets-bar-chart/" rel="alternate" type="text/html" title="Bar Chart dengan Multi Datasets" /><published>2022-08-19T00:00:00+07:00</published><updated>2022-08-19T00:00:00+07:00</updated><id>http://localhost:4000/dash-multi-datasets-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-multi-datasets-bar-chart/"><![CDATA[<p>Kita akan menggunakan study kasus pada postingan <a href="https://farispriadi.github.io/dash-multi-datasets-line-chart">Line Chart dengan Multi Datasets</a>. Pada post kali ini kita akan mencoba membuat bar chart dari dua datasets yaitu bilangan pangkat 2 dan bilangan pangkat 3.</p>
 
-<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/6.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan legend pada Line Chart</title><link href="http://localhost:4000/dash-multi-datasets-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan legend pada Line Chart" /><published>2022-08-18T00:00:00+07:00</published><updated>2022-08-18T00:00:00+07:00</updated><id>http://localhost:4000/dash-multi-datasets-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-multi-datasets-line-chart/"><![CDATA[<p>Pada post kali ini kita akan mencoba menghilangkan garis y axis dan menggantinya dengan memberikan text label.</p>
+<h2 id="impor-modul">Impor Modul</h2>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
 from dash import html
 from dash import dcc
 from plotly import graph_objects as go
+
+
+</code></pre></div></div>
+<p>Beberapa modul yang kita perlukan antara lain <em>html</em> untuk mengakses kelas-kelas komponen HTML, <em>dcc</em> untuk mengakses kelas-kelas komponen interaktif, dan <em>graph_objects</em> untuk mengakses kelas untuk membuat grafik</p>
+
+<h2 id="membuat-figure-bar-chart">Membuat Figure Bar Chart</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+fig = go.Figure()
+
+fig.add_trace(go.Bar(
+					x = [1,2,3,4],
+					y = [1,4,9,16],
+					name='Pangkat 2'
+				)
+			)
+
+
+fig.add_trace(go.Bar(
+					x = [1,2,3,4],
+					y = [1,8,27,64],
+					name='Pangkat 3'
+				)
+			)
+
+fig.update_layout(title='Bilangan Berpangkat')
+
+
+
+
+</code></pre></div></div>
+
+<p>Objek <em>Figure</em> kita buat dan dimasukkan ke dalam variabel <em>fig</em>. Dengan menggunakan method <em>add_trace</em> kita bisa menambahkan dataset ke dalam objek <em>Figure</em>. Berbeda dengan membuat line chart yang menggunakan kelas <em>Scatter</em>, pada kasus bar char kita akan menggunakan kelas <em>Bar</em>. Untuk menambahkan judul dari grafik, gunakan method <em>update_layout</em> dan argumen dengan kata kunci <em>title</em>.</p>
+
+<h2 id="membuat-objek-dash">Membuat Objek Dash</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+
+fig = go.Figure()
+
+fig.add_trace(go.Scatter(
+					x = [1,2,3,4],
+					y = [1,4,9,16],
+					name='Pangkat 2'
+				)
+			)
+
+
+fig.add_trace(go.Scatter(
+					x = [1,2,3,4],
+					y = [1,8,27,64],
+					name='Pangkat 3'
+				)
+			)
+
+fig.update_layout(title='Bilangan Berpangkat')
+
 
 app = dash.Dash(__name__)
 
@@ -23,24 +79,11 @@ app.layout = html.Div([
 				# Div utama
 				html.Div([
 					# Div untuk Judul
-					html.H2("Line Chart Dengan Text Label")
+					html.H2("Bar Chart Dengan Multi Datasets")
 				]),
 				html.Div([
-					# Div untuk Line Chart
-					dcc.Graph(figure=
-							go.Figure(
-								go.Scatter(
-								x = [1,2,3,4],
-								y = [1,4,9,16],
-								mode='lines+markers+text',
-								text=['1^2','2^2','3^2','4^2'],
-								textposition = 'top right',
-							),
-							go.Layout(
-								xaxis={'showgrid':False},
-								yaxis={'showgrid':False}
-							)
-						)
+					# Div untuk Bar Chart
+					dcc.Graph(figure= fig
 					)
 				]),
 			])
@@ -50,55 +93,13 @@ if __name__ == '__main__':
 
 </code></pre></div></div>
 
-<h2 id="menulis-blok-kode">Menulis blok kode</h2>
-
-<p>Selanjutnya kita akan menyembunyikan garis Y axis.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-from plotly import graph_objects as go
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Menyembunyikan Y Axis Pada Line Chart")
-				]),
-				html.Div([
-					# Div untuk Line Chart
-					dcc.Graph(figure=
-							go.Figure(
-								go.Scatter(
-								x = [1,2,3,4],
-								y = [1,4,9,16],
-								mode='lines+markers+text',
-								text=[1,4,9,16],
-								textposition = 'top right',
-							),
-							go.Layout(
-								xaxis={'showgrid':False},
-								yaxis={'showgrid':False, 'visible': False, 'showticklabels': False}
-							)
-						)
-					)
-				]),
-			])
-
-if __name__ == '__main__':
-	app.run_server()
-
-</code></pre></div></div>
-
-<p>Pada kode di atas kita mengganti Text Label dari [‘1^2’,’2^2’,’3^2’,’4^2’] menjadi nilai dari Y yaitu [1,4,9,16]. Untuk menyembunyikan garis sumbu y pada parameter ‘yaxis’ ditambahkan <em>key</em> ‘visible’ dan ‘showticklabels’ yang keduanya bernilai False. Jika diperlukan untuk menyembunyikan sumbu x, kita juga bisa melakukann hal yang sama pada parameter ‘xaxis’.</p>
+<p>Selanjutnya kita perlu membuat objek <em>Dash</em> yang disimpan dalam variabel <em>app</em>. Untuk membuat layout pada objek <em>Dash</em>, gunakan atribut <em>layout</em>. Dari kode di atas terdapat <em>div</em> yang bisa dikatakan sebagai kontainer utama. Dari kontainer utama tersebut dibagi menjadi 2 <em>div</em> lagi. <em>Div</em> pertama untuk judul dari aplikasi <em>Dash</em> dan yang kedua untuk meletakkan objek grafik.</p>
 
 <h2 id="menjalankan-kode">Menjalankan Kode</h2>
 
-<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>line_chart_hide_axis.py</em>) lalu kita jalankan dengan perintah.</p>
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>bar_chart_multi_datasets.py</em>) lalu kita jalankan dengan perintah.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python line_chart_hide_axis.py
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python bar_chart_multi_datasets.py
 Dash is running on http://127.0.0.1:8050/
 
  * Serving Flask app 'test' (lazy loading)
@@ -111,7 +112,125 @@ Dash is running on http://127.0.0.1:8050/
 
 <p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
 
-<p><img src="/assets/images/line_chart_hide_axis.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Pada post kali ini kita akan mencoba menghilangkan garis y axis dan menggantinya dengan memberikan text label.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan x axis atau y axis pada Bar Chart</title><link href="http://localhost:4000/dash-hide-axis-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan x axis atau y axis pada Bar Chart" /><published>2022-08-17T00:00:00+07:00</published><updated>2022-08-17T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-axis-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-axis-bar-chart/"><![CDATA[<p>Kali ini kita akan coba mengimplementasikan Text Label dan menghilangkan sumbu Y.</p>
+<p><img src="/assets/images/bar_chart_multi_datasets.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><summary type="html"><![CDATA[Kita akan menggunakan study kasus pada postingan Line Chart dengan Multi Datasets. Pada post kali ini kita akan mencoba membuat bar chart dari dua datasets yaitu bilangan pangkat 2 dan bilangan pangkat 3.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Line Chart dengan Multi Datasets</title><link href="http://localhost:4000/dash-multi-datasets-line-chart/" rel="alternate" type="text/html" title="Line Chart dengan Multi Datasets" /><published>2022-08-18T00:00:00+07:00</published><updated>2022-08-18T00:00:00+07:00</updated><id>http://localhost:4000/dash-multi-datasets-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-multi-datasets-line-chart/"><![CDATA[<p>Pada post kali ini kita akan mencoba membuat line chart dari dua datasets yaitu bilangan pangkat 2 dan bilangan pangkat 3.</p>
+
+<h2 id="impor-modul">Impor Modul</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+
+</code></pre></div></div>
+<p>Beberapa modul yang kita perlukan antara lain <em>html</em> untuk mengakses kelas-kelas komponen HTML, <em>dcc</em> untuk mengakses kelas-kelas komponen interaktif, dan <em>graph_objects</em> untuk mengakses kelas untuk membuat grafik</p>
+
+<h2 id="membuat-figure-line-chart-dengan-2-garis">Membuat Figure Line Chart Dengan 2 Garis</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+fig = go.Figure()
+
+fig.add_trace(go.Scatter(
+					x = [1,2,3,4],
+					y = [1,4,9,16],
+					mode='lines+markers',
+					name='Pangkat 2'
+				)
+			)
+
+
+fig.add_trace(go.Scatter(
+					x = [1,2,3,4],
+					y = [1,8,27,64],
+					mode='lines+markers',
+					name='Pangkat 3'
+				)
+			)
+
+fig.update_layout(title='Bilangan Berpangkat')
+
+
+
+
+</code></pre></div></div>
+
+<p>Objek <em>Figure</em> kita buat dan dimasukkan ke dalam variabel <em>fig</em>. Dengan menggunakan method <em>add_trace</em> kita bisa menambahkan dataset ke dalam objek <em>Figure</em>. Untuk menambahkan judul dari grafik, gunakan method <em>update_layout</em> dan argumen dengan kata kunci <em>title</em>.</p>
+
+<h2 id="membuat-objek-dash">Membuat Objek Dash</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
+import dash
+from dash import html
+from dash import dcc
+from plotly import graph_objects as go
+
+
+fig = go.Figure()
+
+fig.add_trace(go.Scatter(
+					x = [1,2,3,4],
+					y = [1,4,9,16],
+					mode='lines+markers',
+					name='Pangkat 2'
+				)
+			)
+
+
+fig.add_trace(go.Scatter(
+					x = [1,2,3,4],
+					y = [1,8,27,64],
+					mode='lines+markers',
+					name='Pangkat 3'
+				)
+			)
+
+fig.update_layout(title='Bilangan Berpangkat')
+
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+				# Div utama
+				html.Div([
+					# Div untuk Judul
+					html.H2("Line Chart Dengan Multi Datasets")
+				]),
+				html.Div([
+					# Div untuk Line Chart
+					dcc.Graph(figure= fig
+					)
+				]),
+			])
+
+if __name__ == '__main__':
+	app.run_server()
+
+</code></pre></div></div>
+
+<p>Selanjutnya kita perlu membuat objek <em>Dash</em> yang disimpan dalam variabel <em>app</em>. Untuk membuat layout pada objek <em>Dash</em>, gunakan atribut <em>layout</em>. Dari kode di atas terdapat <em>div</em> yang bisa dikatakan sebagai kontainer utama. Dari kontainer utama tersebut dibagi menjadi 2 <em>div</em> lagi. <em>Div</em> pertama untuk judul dari aplikasi <em>Dash</em> dan yang kedua untuk meletakkan objek grafik.</p>
+
+<h2 id="menjalankan-kode">Menjalankan Kode</h2>
+
+<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>line_chart_multi_datasets.py</em>) lalu kita jalankan dengan perintah.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python line_chart_multi_datasets.py
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
+</code></pre></div></div>
+
+<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
+
+<p><img src="/assets/images/line_chart_multi_datasets.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Pada post kali ini kita akan mencoba membuat line chart dari dua datasets yaitu bilangan pangkat 2 dan bilangan pangkat 3.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan x axis atau y axis pada Bar Chart</title><link href="http://localhost:4000/dash-hide-axis-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan x axis atau y axis pada Bar Chart" /><published>2022-08-17T00:00:00+07:00</published><updated>2022-08-17T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-axis-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-axis-bar-chart/"><![CDATA[<p>Kali ini kita akan coba mengimplementasikan Text Label dan menghilangkan sumbu Y.</p>
 
 <h2 id="membuat-bar-chart">Membuat Bar Chart</h2>
 

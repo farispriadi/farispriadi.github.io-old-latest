@@ -1,6 +1,6 @@
 # Site
 name: 'Programmer Biasa'
-description: 'opini dan log seorang programmer.'
+description: 'bisa karena biasa'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
@@ -23,7 +23,7 @@ authors:
       name:           Faris Priadi
       site:           https://farispriadi.github.io
       avatar:         assets/images/avatar1.png
-      bio:            "Seorang programmer biasa saja"
+      bio:            "Seorang programmer"
       email:          farispriadi@gmail.com
       twitter:        https://twitter.com/farispriadi
 

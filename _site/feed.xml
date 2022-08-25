@@ -1,4 +1,144 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-20T00:08:35+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>opini dan log seorang programmer.</subtitle><entry><title type="html">Bar Chart dengan Multi Datasets</title><link href="http://localhost:4000/dash-multi-datasets-bar-chart/" rel="alternate" type="text/html" title="Bar Chart dengan Multi Datasets" /><published>2022-08-19T00:00:00+07:00</published><updated>2022-08-19T00:00:00+07:00</updated><id>http://localhost:4000/dash-multi-datasets-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-multi-datasets-bar-chart/"><![CDATA[<p>Kita akan menggunakan study kasus pada postingan <a href="https://farispriadi.github.io/dash-multi-datasets-line-chart">Line Chart dengan Multi Datasets</a>. Pada post kali ini kita akan mencoba membuat bar chart dari dua datasets yaitu bilangan pangkat 2 dan bilangan pangkat 3.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-25T20:42:57+07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programmer Biasa</title><subtitle>bisa karena biasa</subtitle><entry><title type="html">Memberikan dua warna dalam satu dataset pada Bar Chart.</title><link href="http://localhost:4000/dash-multi-color-one-dataset-bar-chart/" rel="alternate" type="text/html" title="Memberikan dua warna dalam satu dataset pada Bar Chart." /><published>2022-08-25T00:00:00+07:00</published><updated>2022-08-25T00:00:00+07:00</updated><id>http://localhost:4000/dash-multi-color-one-dataset-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-multi-color-one-dataset-bar-chart/"><![CDATA[<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<p>I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.</p>
+
+<blockquote>
+  <p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>
+</blockquote>
+
+<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<h4 id="i-dont-want-you-to-think-that-im-boasting">I don’t want you to think that I’m boasting</h4>
+
+<p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>
+
+<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<blockquote>
+  <p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+</blockquote>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<p>I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.</p>
+
+<p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/14.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/14.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Memberikan dua warna dalam satu dataset pada Line Chart.</title><link href="http://localhost:4000/dash-multi-color-one-dataset-line-chart/" rel="alternate" type="text/html" title="Memberikan dua warna dalam satu dataset pada Line Chart." /><published>2022-08-24T00:00:00+07:00</published><updated>2022-08-24T00:00:00+07:00</updated><id>http://localhost:4000/dash-multi-color-one-dataset-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-multi-color-one-dataset-line-chart/"><![CDATA[<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<p>I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.</p>
+
+<blockquote>
+  <p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>
+</blockquote>
+
+<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<h4 id="i-dont-want-you-to-think-that-im-boasting">I don’t want you to think that I’m boasting</h4>
+
+<p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>
+
+<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<blockquote>
+  <p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+</blockquote>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<p>I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.</p>
+
+<p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/14.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/14.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mengubah warna pada Bar Chart.</title><link href="http://localhost:4000/dash-color-bar-chart/" rel="alternate" type="text/html" title="Mengubah warna pada Bar Chart." /><published>2022-08-23T00:00:00+07:00</published><updated>2022-08-23T00:00:00+07:00</updated><id>http://localhost:4000/dash-color-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-color-bar-chart/"><![CDATA[<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<p>I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.</p>
+
+<blockquote>
+  <p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>
+</blockquote>
+
+<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<h4 id="i-dont-want-you-to-think-that-im-boasting">I don’t want you to think that I’m boasting</h4>
+
+<p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>
+
+<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<blockquote>
+  <p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+</blockquote>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<p>I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.</p>
+
+<p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/14.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/14.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mengubah warna pada Line Chart.</title><link href="http://localhost:4000/dash-color-line-chart/" rel="alternate" type="text/html" title="Mengubah warna pada Line Chart." /><published>2022-08-22T00:00:00+07:00</published><updated>2022-08-22T00:00:00+07:00</updated><id>http://localhost:4000/dash-color-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-color-line-chart/"><![CDATA[<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<p>I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.</p>
+
+<blockquote>
+  <p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>
+</blockquote>
+
+<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<h4 id="i-dont-want-you-to-think-that-im-boasting">I don’t want you to think that I’m boasting</h4>
+
+<p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>
+
+<p>I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.</p>
+
+<blockquote>
+  <p>So begins Hallam Hawksworth’s The Strange Adventures of a Pebble. Written in the 1920s, the book was part of a series which also included The Adventures of a Grain of Dust and A Year in the Wonderland of Trees, all of which were supposed to introduce children to the world of Natural Sciences.</p>
+</blockquote>
+
+<p>In each of them, Hawksworth personifies the natural object he is exploring, and using a mixture of folk tales, scientific facts and colloquial, friendly explanations guides the reader through the history of the natural world. It’s a real thrill of a ride, dramatizing the life cycle of supposedly dull things. The Adventures of a Grain of Dust begins even more loudly than Pebble:</p>
+
+<p>I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.</p>
+
+<p>Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/14.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/14.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan legend pada Bar Chart</title><link href="http://localhost:4000/dash-hide-legend-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan legend pada Bar Chart" /><published>2022-08-21T00:00:00+07:00</published><updated>2022-08-21T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-legend-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-legend-bar-chart/"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated. Something.</p>
+
+<p>To add new posts, simply add a file in the <code class="language-plaintext highlighter-rouge">_posts</code> directory that follows the convention <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><category term="featured" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Something.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/6.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Bar Chart dengan Multi Datasets</title><link href="http://localhost:4000/dash-multi-datasets-bar-chart/" rel="alternate" type="text/html" title="Bar Chart dengan Multi Datasets" /><published>2022-08-19T00:00:00+07:00</published><updated>2022-08-19T00:00:00+07:00</updated><id>http://localhost:4000/dash-multi-datasets-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-multi-datasets-bar-chart/"><![CDATA[<p>Kita akan menggunakan study kasus pada postingan <a href="https://farispriadi.github.io/dash-multi-datasets-line-chart">Line Chart dengan Multi Datasets</a>. Pada post kali ini kita akan mencoba membuat bar chart dari dua datasets yaitu bilangan pangkat 2 dan bilangan pangkat 3.</p>
 
 <h2 id="impor-modul">Impor Modul</h2>
 
@@ -522,492 +662,4 @@ Dash is running on http://127.0.0.1:8050/
 
 <p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
 
-<p><img src="/assets/images/bar_chart_with_text_label.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><summary type="html"><![CDATA[Memberikan Text Label pada Bar Chart memudahkan pengguna untuk melihat nilai pada sumbu y tanpa harus menurutkannya ke sumbu y sendiri, artinya dapat mengurangi energi yang dikeluarkan oleh pengguna dalam melihat sebuah grafik. Pada post kali ini kita akan membahas mengenai panambahan Text Label pada Bar Chart.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menambahkan Text Label pada Line Chart dengan Dash Plotly.</title><link href="http://localhost:4000/dash-text-label-in-line-chart/" rel="alternate" type="text/html" title="Menambahkan Text Label pada Line Chart dengan Dash Plotly." /><published>2022-08-14T00:00:00+07:00</published><updated>2022-08-14T00:00:00+07:00</updated><id>http://localhost:4000/dash-text-label-in-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-text-label-in-line-chart/"><![CDATA[<p>Dalam sebuah grafik garis atau Line Chart kita biasanya memerlukan tambahan text di atas koordinat nilai dari x dan y untuk memudahkan membaca nilai pada titik tersebut. Penambahan text label pada Line Chart akan kita bahas pada post kali ini.</p>
-
-<h2 id="import-modul">Import Modul</h2>
-
-<p>Berbeda dengan contoh pada post <a href="https://farispriadi.github.io/dash-text-label-in-line-chart/">Membuat Line Chart dengan Dash Plotly</a>, kita akan membuat objek grafik garis tersebut dengan menggunakan modul <em>graph_objects</em></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-from plotly import graph_objects as go
-
-</code></pre></div></div>
-
-<p>impor <em>graph_objects</em> dari modul <em>plotly</em>, kemudian akses <em>graph_objects</em> tersebut dengan menggunakan alias <em>go</em>.</p>
-
-<h2 id="menulis-blok-kode">Menulis blok kode</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Line Chart Dengan Text Label")
-				]),
-				html.Div([
-					# Div untuk Line Chart
-					dcc.Graph(figure=
-							go.Figure(
-								go.Scatter(
-								x = [1,2,3,4],
-								y = [1,4,9,16],
-								mode='lines+markers+text',
-								text=['1^2','2^2','3^2','4^2'],
-								textposition = 'top right',
-								textfont=dict(size=16)
-							),
-							go.Layout(
-								xaxis={'showgrid':False},
-								yaxis={'showgrid':False}
-							)
-						)
-					)
-				]),
-			])
-
-if __name__ == '__main__':
-	app.run_server()
-
-</code></pre></div></div>
-
-<p><em>html.Div</em> merupakan komponen html dalam Dash Plotly yang fungsinya sama dengan <em>div</em> pada HTML yaitu digunakan sebagai kontainer elemen HTML yang lain. <em>html.H2</em> kode ini digunakan untuk membuat layaknya heading H2 pada HTML. Komponen H2 ini ada dalam modul html. Untuk menampilkan grafik kita memerlukan objek <em>Graph</em> yang berada pada modul <em>dcc</em>. Pada kode di atas kita akan membuat line chart dengan menggunakan objek dari <em>scatter plot</em> . <em>figure</em> pada kelas Graph diisi dengan objek Figure dari <em>graph_objects</em>, dan argumen untuk kontruktor dari <em>go.Figure</em> diisi dengan <em>go.Scatter</em> yang sebenarnya kita akan membuat grafik dengan tipe <em>scatter plot</em>. Namun dengan menggunakan <em>mode=lines+markers+text</em> akan membuat grafik tersebut menjadi sebuah Line Chart, sekaligus memberikan <em>marker</em> bulat dan text label. Argumen <em>text</em> berisi <em>list</em> dari text label yang akan ditampilkan. Nilai <em>x</em> dan <em>y</em> axis disi dengan sebuah list yang mempunyai panjang yang sama. Misalkan x adalah <em>list</em> nama daftar bilangan dan y adalah <em>list</em> hasil pangkat 2 dari bilangan tersebut. Pada kode di atas akan muncul Line Chart yang memiliki text label berupa keterangan dari bilangan simbol pangkat 2.</p>
-
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Kode secara utuh akan tampil sebagai berikut.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-from plotly import graph_objects as go
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Line Chart Dengan Text Label")
-				]),
-				html.Div([
-					# Div untuk Line Chart
-					dcc.Graph(figure=
-							go.Figure(
-								go.Scatter(
-								x = [1,2,3,4],
-								y = [1,4,9,16],
-								mode='lines+markers+text',
-								text=['1^2','2^2','3^2','4^2'],
-								textposition = 'top right',
-							),
-							go.Layout(
-								xaxis={'showgrid':False},
-								yaxis={'showgrid':False}
-							)
-						)
-					)
-				]),
-			])
-
-if __name__ == '__main__':
-	app.run_server()
-
-</code></pre></div></div>
-
-<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>line_chart_with_text_label.py</em>) lalu kita jalankan dengan perintah.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python line_chart_with_text_label
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app 'test' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
-</code></pre></div></div>
-
-<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
-
-<p><img src="/assets/images/line_chart_with_text_label.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Dalam sebuah grafik garis atau Line Chart kita biasanya memerlukan tambahan text di atas koordinat nilai dari x dan y untuk memudahkan membaca nilai pada titik tersebut. Penambahan text label pada Line Chart akan kita bahas pada post kali ini.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan grid Bar Chart</title><link href="http://localhost:4000/dash-hide-grid-bar-chart/" rel="alternate" type="text/html" title="Menyembunyikan grid Bar Chart" /><published>2022-08-13T00:00:00+07:00</published><updated>2022-08-13T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-grid-bar-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-grid-bar-chart/"><![CDATA[<p>Secara default untuk membuat Bar Chart pada Dash Plotly grid pada tampilan grafik akan muncul. Pada post kali ini akan kita sembunyikan grid pada Bar Chart.</p>
-
-<h2 id="membuat-bar-chart">Membuat Bar Chart</h2>
-
-<p>Kita akan membuat Bar Chart menggunakan kode dari <a href="https://farispriadi.github.io/dash-simple-bar-chart/">Membuat Bar Chart dengan Dash Plotly</a>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-from plotly import graph_objects as go
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Bar Chart Sederhana dengan Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk Bar Chart
-					dcc.Graph( figure =
-						go.Figure(
-							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38])
-						)
-
-
-					)
-				]),
-			])
-
-if __name__ == '__main__':
-	app.run_server()
-
-
-</code></pre></div></div>
-
-<h2 id="menghilangkan-grid">Menghilangkan Grid</h2>
-<p>Grid pada bar chart hanya muncul pada subu y saja, sehingga cukup menyembunyikan garis yang muncul dari yaxis. Dengan membuat objek dari<em>go.Layout</em> dan diisi dengan dictionary dengan <em>key</em> <em>yaxis: {‘showgrid’: False}</em>. Sehingga kode akan menjadi sebagai berikut.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-from plotly import graph_objects as go
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Bar Chart Sederhana dengan Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk Bar Chart
-					dcc.Graph( figure =
-						go.Figure(
-							go.Bar(x=['Jawa Barat','Jawa Tengah','Jawa Timur'], y=[27,35,38]),
-							go.Layout(yaxis={'showgrid': False})
-						)
-
-
-					)
-				]),
-			])
-
-if __name__ == '__main__':
-	app.run_server()
-</code></pre></div></div>
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>no_grid_bar_chart.py</em>) lalu kita jalankan dengan perintah.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python no_grid_bar_chart.py
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app 'test' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
-</code></pre></div></div>
-
-<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.
-<img src="/assets/images/hide_grid_bar_chart.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><summary type="html"><![CDATA[Secara default untuk membuat Bar Chart pada Dash Plotly grid pada tampilan grafik akan muncul. Pada post kali ini akan kita sembunyikan grid pada Bar Chart.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Menyembunyikan Grid pada Line Chart</title><link href="http://localhost:4000/dash-hide-grid-line-chart/" rel="alternate" type="text/html" title="Menyembunyikan Grid pada Line Chart" /><published>2022-08-12T00:00:00+07:00</published><updated>2022-08-12T00:00:00+07:00</updated><id>http://localhost:4000/dash-hide-grid-line-chart</id><content type="html" xml:base="http://localhost:4000/dash-hide-grid-line-chart/"><![CDATA[<p>Terkadang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.</p>
-
-<h2 id="membuat-line-chart">Membuat Line Chart</h2>
-
-<p>Kita akan membuat Line Chart menggunakan kode dari <a href="https://farispriadi.github.io/dash-simple-line-chart/">Membuat Line Chart dengan Dash Plotly</a>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Line Chart Sederhana dengan Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk Line Chart
-					dcc.Graph( figure =
-						{
-							'data' : [{
-								'x' : [1,2,3,4,5,6,7,8,9],
-								'y' : [1,4,9,16,25,36,49,64,81],
-								'mode': 'lines',
-
-							}],
-							'layout' : {
-								'title' : 'Pangkat Kuadrat',
-							}
-						}
-
-
-					)
-				]),
-			])
-
-if __name__ == '__main__':
-	app.run_server()
-
-</code></pre></div></div>
-
-<h2 id="menghilangkan-grid">Menghilangkan Grid</h2>
-<p>Untuk menghilangkan grid atau garis yang melintang baik dari sumbu x maupun y cukup dengan menambahkan <em>key</em> <em>xaxis: {‘showgrid’: False}</em> dan <em>yaxis: {‘showgrid’: False}</em> pada dictionar layout. Sehingga kode akan menjadi sebagai berikut.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import html
-from dash import dcc
-
-app = dash.Dash(__name__)
-
-app.layout = html.Div([
-				# Div utama
-				html.Div([
-					# Div untuk Judul
-					html.H2("Line Chart Sederhana dengan Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk Line Chart
-					dcc.Graph( figure =
-						{
-							'data' : [{
-								'x' : [1,2,3,4,5,6,7,8,9],
-								'y' : [1,4,9,16,25,36,49,64,81],
-								'mode': 'lines',
-
-							}],
-							'layout' : {
-								'title' : 'Pangkat Kuadrat',
-								'xaxis' : {'showgrid': False},
-								'yaxis' : {'showgrid': False}
-							}
-						}
-
-
-					)
-				]),
-			])
-
-if __name__ == '__main__':
-	app.run_server()
-</code></pre></div></div>
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>no_grid_line_chart.py</em>) lalu kita jalankan dengan perintah.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python no_grid_line_chart.py
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app 'test' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
-</code></pre></div></div>
-
-<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.
-<img src="/assets/images/hide_grid_line_chart.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="line chart" /><category term="tutorial" /><summary type="html"><![CDATA[Terkadang untuk membuat sebuah garis tren dalam Line Chart kita memerlukan untuk membuat semua yang item mengganggu untuk dihilangkan. Grid pada Line Chart termasuk item yang selalu muncul dibelakang garis. Grid dapat membuat sebuah Line Chart bertambah ruwet ketika dibaca. Kita dapat menghilangkannya jika memang diperlukan agar sebuah grafik dapat lebih mudah dilihat trennya.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590011/pexels-photo-590011.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Membuat cell pada Dash Data Table dapat diedit</title><link href="http://localhost:4000/dash-editable-table/" rel="alternate" type="text/html" title="Membuat cell pada Dash Data Table dapat diedit" /><published>2022-08-11T00:00:00+07:00</published><updated>2022-08-11T00:00:00+07:00</updated><id>http://localhost:4000/dash-editable-table</id><content type="html" xml:base="http://localhost:4000/dash-editable-table/"><![CDATA[<p>Tabel biasanya digunakan untuk menampilkan data yang mempunyai baris dan kolom. Tabel juga terkadang dibuat tidak hanya untuk menampilkan data namun untuk mengisi data. Kali ini kita akan membuat tabel yang nilainya dapat Anda ubah atau dapat diupdate.</p>
-
-<h2 id="membuat-table">Membuat Table</h2>
-
-<p>Sebagai awalan akan menggunakan kode dari postingan <a href="https://farispriadi.github.io/dash-data-table/">Membuat Table dengan Dash Plotly</a>.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-df = pd.DataFrame("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-					html.H2("Tabel Sederhana Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk table
-					dash_table.DataTable(df.to_dict('records'), [ {'name': i, 'id': i} for i in df.columns])
-				]),
-			])
-
-if __name__ == "__main__":
-	app.run_server()
-
-</code></pre></div></div>
-
-<h2 id="menambahkan-fitur-pengurutan-sorting">Menambahkan Fitur Pengurutan (Sorting)</h2>
-
-<p>Kode diatas hanya akan menampilkan tabel dengan data namun kita tidak bisa menperbaharui data yang tertera pada setiap <em>cell</em>. Kita akan menambahkan <em>keyword argument</em> yaitu <em>data</em> pada <em>df.to_dict(‘records’)</em> dan <em>columns</em> pada [ {‘name’: i, ‘id’: i} for i in df.columns] . Kita perlu menambahkan <em>editable=True</em> pada saat instantiasi DataTable agar fitur untuk mengedit cell dapat aktif. Sehingga kode akan menjadi sebagai berikut.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-					html.H2("Tabel Dengan  Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk table
-					dash_table.DataTable(
-						data = df.to_dict('records'), 
-						columns=[ {'name': i, 'id': i} for i in df.columns],
-						editable=True,
-					)
-				]),
-			])
-
-if __name__ == "__main__":
-	app.run_server()
-
-</code></pre></div></div>
-<p>Pada saat kode ini dijalankan kita dapat mengubah nilai dari setiap <em>cell</em> yang sudah terisi nilai termasuk mengosongkannya.</p>
-
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>editable_table.py</em>) lalu kita jalankan dengan perintah.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python editable_table.py
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app 'test' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
-</code></pre></div></div>
-
-<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="table" /><category term="tutorial" /><summary type="html"><![CDATA[Tabel biasanya digunakan untuk menampilkan data yang mempunyai baris dan kolom. Tabel juga terkadang dibuat tidak hanya untuk menampilkan data namun untuk mengisi data. Kali ini kita akan membuat tabel yang nilainya dapat Anda ubah atau dapat diupdate.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mem-filter nilai dalam sebuah kolom pada Dash Data Table</title><link href="http://localhost:4000/dash-filterable-table/" rel="alternate" type="text/html" title="Mem-filter nilai dalam sebuah kolom pada Dash Data Table" /><published>2022-08-10T00:00:00+07:00</published><updated>2022-08-10T00:00:00+07:00</updated><id>http://localhost:4000/dash-filterable-table</id><content type="html" xml:base="http://localhost:4000/dash-filterable-table/"><![CDATA[<p>Ketika menemui tabel ada kalanya kita ingin dengan cepat menemukan sebuah nilai yang kita cari dengan cepat. Maka dari itu kita memerlukan fitur filter dalama tabel. Kali ini kita akan menambahkan fitur filter pada Dash Data Table.</p>
-
-<h2 id="membuat-table">Membuat Table</h2>
-
-<p>Dengan Dash Datatable memungkinkan sebuah kolom dari sebuah tabel dapat diurutkan. Untuk membuat sebuah tabel dapat difilter kita akan memerlukan parameter <em># filter_action=’native’</em> pada saat membuat objek DataTable. Selanjutnya kita akan mengimplementasikannya dengan menggunakan kode dari <a href="https://farispriadi.github.io/dash-data-table/">Membuat Table dengan Dash Plotly</a></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-df = pd.DataFrame("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-					html.H2("Tabel Sederhana Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk table
-					dash_table.DataTable(df.to_dict('records'), [ {'name': i, 'id': i} for i in df.columns])
-				]),
-			])
-
-if __name__ == "__main__":
-	app.run_server()
-
-</code></pre></div></div>
-
-<h2 id="menambahkan-fitur-filter">Menambahkan Fitur Filter</h2>
-
-<p>Pada kode diatas kita tambahkan <em>keyword argument</em> untuk <em>data</em> dan <em>columns</em>.Kita perlu menambahkan <em>filter_action=’native’</em> untuk mengaktifkan fitur filter pada tiap kolom dalam tabel, sehingga kode akan menjadi sebagai berikut.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-					html.H2("Tabel Dengan  Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk table
-					dash_table.DataTable(
-						data = df.to_dict('records'), 
-						columns=[ {'name': i, 'id': i} for i in df.columns],
-						filter_action='native',
-					)
-				]),
-			])
-
-if __name__ == "__main__":
-	app.run_server()
-
-</code></pre></div></div>
-
-<p>Dengan menambahkan <em>sorting</em> pada laman  <a href="https://farispriadi.github.io/dash-sortable-table/">Mengurutkan Nilai pada Dash Data Table</a>, kita akan dapat mempunyai fitur filter dan sorting.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import dash
-from dash import dash_table
-from dash import html
-import pandas as pd
-
-app = dash.Dash(__name__)
-
-df = pd.read_csv("http://data.bandung.go.id/dataset/fb75420f-05b5-4f50-997a-b2097a932270/resource/37bbbf28-0bec-4103-b3d2-dd148d368efa/download/data-laporan-iklim-1976-2017.csv")
-
-app.layout = html.Div([
-				html.Div([
-					# Div untuk judul
-					html.H2("Tabel Dengan  Dash Plotly")
-				]),
-				html.Div([
-					# Div untuk table
-					dash_table.DataTable(
-						data = df.to_dict('records'), 
-						columns=[ {'name': i, 'id': i} for i in df.columns],
-						filter_action='native',
-						sort_action='native',
-						sort_mode='multi',
-					)
-				]),
-			])
-
-if __name__ == "__main__":
-	app.run_server()
-
-</code></pre></div></div>
-
-<h2 id="menjalankan-kode">Menjalankan Kode</h2>
-
-<p>Kita dapat menjalankan kode dengan menyimpannya terlebih dahulu (misalkan dengan nama file <em>filterable_table.py</em>) lalu kita jalankan dengan perintah.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python filterable_table.py
-Dash is running on http://127.0.0.1:8050/
-
- * Serving Flask app 'test' (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:8050 (Press CTRL+C to quit)
-</code></pre></div></div>
-
-<p>Anda bisa buka browser dan arahkan ke url <em>http://127.0.0.1:8050</em>.</p>
-
-<p><img src="/assets/images/simple_table_filter.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="table" /><category term="tutorial" /><summary type="html"><![CDATA[Ketika menemui tabel ada kalanya kita ingin dengan cepat menemukan sebuah nilai yang kita cari dengan cepat. Maka dari itu kita memerlukan fitur filter dalama tabel. Kali ini kita akan menambahkan fitur filter pada Dash Data Table.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/164686/pexels-photo-164686.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p><img src="/assets/images/bar_chart_with_text_label.png" alt="Tampilan" /></p>]]></content><author><name>faris</name></author><category term="dash" /><category term="plotly" /><category term="bar chart" /><category term="tutorial" /><summary type="html"><![CDATA[Memberikan Text Label pada Bar Chart memudahkan pengguna untuk melihat nilai pada sumbu y tanpa harus menurutkannya ke sumbu y sendiri, artinya dapat mengurangi energi yang dikeluarkan oleh pengguna dalam melihat sebuah grafik. Pada post kali ini kita akan membahas mengenai panambahan Text Label pada Bar Chart.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" /><media:content medium="image" url="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
